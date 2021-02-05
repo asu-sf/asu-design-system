@@ -1,9 +1,8 @@
 # asu-design-system
 
 ## Steps to update
-**Follow the README setup instructions for the ASU Design System: https://github.com/ASU/asu-unity-stack**
-
-**Open Terminal, and run:**  
+1. **Follow the README setup instructions for the ASU Design System: https://github.com/ASU/asu-unity-stack**
+2. **Open Terminal, and run:**  
 `npm -g install @asu-design-system/components-library@dev`  
 `npm -g install @asu-design-system/bootstrap4-theme@dev`  
 `npm -g install @asu-design-system/design-tokens@dev`  
