@@ -1,6 +1,6 @@
 # asu-design-system
 
-## Steps to update
+## Steps to install/update
 1. **Follow the README setup instructions for the ASU Design System: https://github.com/ASU/asu-unity-stack**
 2. **Open Terminal, and run:**  
 `npm -g install @asu-design-system/components-library@dev`  
