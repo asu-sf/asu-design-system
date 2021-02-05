@@ -1,0 +1,47 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '/var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme',
+1 verbose cli   '--userconfig',
+1 verbose cli   '/tmp/b300051c3be30d6077f74c00ba9cf0e0/.npmrc',
+1 verbose cli   '--tag',
+1 verbose cli   'dev',
+1 verbose cli   '--registry',
+1 verbose cli   'http://ec2-54-201-88-203.us-west-2.compute.amazonaws.com/'
+1 verbose cli ]
+2 info using npm@6.14.5
+3 info using node@v12.18.1
+4 verbose config Skipping project config: /var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme/.npmrc. (matches userconfig)
+5 verbose npm-session 9659befe5da0ceef
+6 verbose publish [ '/var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme' ]
+7 info lifecycle @asu-design-system/bootstrap4-theme@1.0.0~prepublish: @asu-design-system/bootstrap4-theme@1.0.0
+8 info lifecycle @asu-design-system/bootstrap4-theme@1.0.0~prepare: @asu-design-system/bootstrap4-theme@1.0.0
+9 verbose lifecycle @asu-design-system/bootstrap4-theme@1.0.0~prepare: unsafe-perm in lifecycle true
+10 verbose lifecycle @asu-design-system/bootstrap4-theme@1.0.0~prepare: PATH: /var/lib/jenkins/workspace/unity_dev@2/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme/node_modules/.bin:/var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme/node_modules/.bin:/var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme/node_modules/.bin:/var/lib/jenkins/workspace/unity_dev@2/packages/node_modules/.bin:/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin:/var/lib/jenkins/workspace/node_modules/.bin:/var/lib/jenkins/node_modules/.bin:/var/lib/node_modules/.bin:/var/node_modules/.bin:/node_modules/.bin:/usr/local/bin:/tmp/yarn--1592937413376-0.7249928974367181:/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin:.config/yarn/link/node_modules/.bin:/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin:/var/lib/jenkins/workspace/unity_dev@2/.yarn/bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+11 verbose lifecycle @asu-design-system/bootstrap4-theme@1.0.0~prepare: CWD: /var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme
+12 silly lifecycle @asu-design-system/bootstrap4-theme@1.0.0~prepare: Args: [ '-c', 'yarn run build' ]
+13 silly lifecycle @asu-design-system/bootstrap4-theme@1.0.0~prepare: Returned: code: 1  signal: null
+14 info lifecycle @asu-design-system/bootstrap4-theme@1.0.0~prepare: Failed to exec prepare script
+15 verbose stack Error: @asu-design-system/bootstrap4-theme@1.0.0 prepare: `yarn run build`
+15 verbose stack Exit status 1
+15 verbose stack     at EventEmitter.<anonymous> (/var/lib/jenkins/workspace/unity_dev@2/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+15 verbose stack     at EventEmitter.emit (events.js:315:20)
+15 verbose stack     at ChildProcess.<anonymous> (/var/lib/jenkins/workspace/unity_dev@2/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+15 verbose stack     at ChildProcess.emit (events.js:315:20)
+15 verbose stack     at maybeClose (internal/child_process.js:1021:16)
+15 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+16 verbose pkgid @asu-design-system/bootstrap4-theme@1.0.0
+17 verbose cwd /var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme
+18 verbose Linux 4.14.173-137.229.amzn2.x86_64
+19 verbose argv "/usr/local/bin/node" "/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin/npm" "publish" "/var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme" "--userconfig" "/tmp/b300051c3be30d6077f74c00ba9cf0e0/.npmrc" "--tag" "dev" "--registry" "http://ec2-54-201-88-203.us-west-2.compute.amazonaws.com/"
+20 verbose node v12.18.1
+21 verbose npm  v6.14.5
+22 error code ELIFECYCLE
+23 error errno 1
+24 error @asu-design-system/bootstrap4-theme@1.0.0 prepare: `yarn run build`
+24 error Exit status 1
+25 error Failed at the @asu-design-system/bootstrap4-theme@1.0.0 prepare script.
+25 error This is probably not a problem with npm. There is likely additional logging output above.
+26 verbose exit [ 1, true ]

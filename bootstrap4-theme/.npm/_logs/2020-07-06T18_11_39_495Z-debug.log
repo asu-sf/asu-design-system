@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'build-storybook',
+1 verbose cli   '--',
+1 verbose cli   '-o',
+1 verbose cli   'build'
+1 verbose cli ]
+2 info using npm@6.14.5
+3 info using node@v12.18.0
+4 verbose config Skipping project config: /var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme/.npmrc. (matches userconfig)
+5 verbose run-script [ 'prebuild-storybook', 'build-storybook', 'postbuild-storybook' ]
+6 info lifecycle @asu-design-system/bootstrap4-theme@1.0.3~prebuild-storybook: @asu-design-system/bootstrap4-theme@1.0.3
+7 info lifecycle @asu-design-system/bootstrap4-theme@1.0.3~build-storybook: @asu-design-system/bootstrap4-theme@1.0.3
+8 warn lifecycle The node binary used for scripts is /tmp/yarn--1594059071185-0.013378079024981337/node but npm is using /usr/local/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+9 verbose lifecycle @asu-design-system/bootstrap4-theme@1.0.3~build-storybook: unsafe-perm in lifecycle true
+10 verbose lifecycle @asu-design-system/bootstrap4-theme@1.0.3~build-storybook: PATH: /var/lib/jenkins/workspace/unity_dev@2/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme/node_modules/.bin:/tmp/yarn--1594059071185-0.013378079024981337:/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin:.config/yarn/link/node_modules/.bin:/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin:/var/lib/jenkins/workspace/unity_dev@2/.yarn/bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+11 verbose lifecycle @asu-design-system/bootstrap4-theme@1.0.3~build-storybook: CWD: /var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme
+12 silly lifecycle @asu-design-system/bootstrap4-theme@1.0.3~build-storybook: Args: [ '-c', 'build-storybook "-o" "build"' ]
+13 silly lifecycle @asu-design-system/bootstrap4-theme@1.0.3~build-storybook: Returned: code: 1  signal: null
+14 info lifecycle @asu-design-system/bootstrap4-theme@1.0.3~build-storybook: Failed to exec build-storybook script
+15 verbose stack Error: @asu-design-system/bootstrap4-theme@1.0.3 build-storybook: `build-storybook "-o" "build"`
+15 verbose stack Exit status 1
+15 verbose stack     at EventEmitter.<anonymous> (/var/lib/jenkins/workspace/unity_dev@2/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+15 verbose stack     at EventEmitter.emit (events.js:315:20)
+15 verbose stack     at ChildProcess.<anonymous> (/var/lib/jenkins/workspace/unity_dev@2/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+15 verbose stack     at ChildProcess.emit (events.js:315:20)
+15 verbose stack     at maybeClose (internal/child_process.js:1021:16)
+15 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+16 verbose pkgid @asu-design-system/bootstrap4-theme@1.0.3
+17 verbose cwd /var/lib/jenkins/workspace/unity_dev@2/packages/bootstrap4-theme
+18 verbose Linux 4.14.173-137.229.amzn2.x86_64
+19 verbose argv "/usr/local/bin/node" "/var/lib/jenkins/workspace/unity_dev@2/node_modules/.bin/npm" "run" "build-storybook" "--" "-o" "build"
+20 verbose node v12.18.0
+21 verbose npm  v6.14.5
+22 error code ELIFECYCLE
+23 error errno 1
+24 error @asu-design-system/bootstrap4-theme@1.0.3 build-storybook: `build-storybook "-o" "build"`
+24 error Exit status 1
+25 error Failed at the @asu-design-system/bootstrap4-theme@1.0.3 build-storybook script.
+25 error This is probably not a problem with npm. There is likely additional logging output above.
+26 verbose exit [ 1, true ]
