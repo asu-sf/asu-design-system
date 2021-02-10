@@ -1,6 +1,11 @@
 # asu-design-system
 ## [ASU Design System](https://unity.web.asu.edu) implementation for [ASU Salesforce Enterprise](https://github.com/ASU/asu-salesforce-metadata)
 
+### Prerequisites
+1. [Install Homebrew](https://brew.sh/)
+2. Install npm:
+`brew install node`
+
 ### Steps to install
 1. Fork the repository
 2. Run the following in Terminal:  
