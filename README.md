@@ -17,10 +17,10 @@
 3. Follow the [README setup instructions](https://github.com/ASU/asu-unity-stack) for the ASU Design System
 
 ### Steps to update
-1. Update your fork
+1. Update your fork:  
 `cd /usr/local/lib/node_modules/@asu-design-system`  
-`git pull mgilardi main`
-`git push origin main`
+`git pull mgilardi main`  
+`git push origin main`  
 2. Update @asu-design-system and push to your fork:  
 `npm -g install @asu-design-system/components-library@dev`  
 `npm -g install @asu-design-system/bootstrap4-theme@dev`  
