@@ -9,6 +9,7 @@
 ### Steps to install
 1. Fork the repository
 2. Create the directory for npm and clone the repository:  
+`sudo su`  
 `mkdir -p /usr/local/lib/node_modules`  
 `cd /usr/local/lib/node_modules`  
 `git clone https://github.com/<username>/asu-design-system.git @asu-design-system`  
@@ -18,6 +19,7 @@
 
 ### Steps to update
 1. Update your fork:  
+`sudo su`  
 `cd /usr/local/lib/node_modules/@asu-design-system`  
 `git pull mgilardi main`  
 `git push origin main`  
