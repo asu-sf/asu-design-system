@@ -11,9 +11,9 @@
 2. Create the directory for npm and clone the repository:  
 `mkdir -p /usr/local/lib/node_modules`  
 `cd /usr/local/lib/node_modules`  
-`git clone https://github.com/<username>/asu-design-system.git @asu-design-system`
-`cd @asu-design-system`
-`git remote add mgilardi https://github.com/mgilardi/asu-design-system.git`
+`git clone https://github.com/<username>/asu-design-system.git @asu-design-system`  
+`cd @asu-design-system`  
+`git remote add mgilardi https://github.com/mgilardi/asu-design-system.git`  
 3. Follow the [README setup instructions](https://github.com/ASU/asu-unity-stack) for the ASU Design System
 
 ### Steps to update
