@@ -1,6 +1,7 @@
 # asu-design-system
+## [ASU Design System](https://unity.web.asu.edu) implementation for [ASU Salesforce Enterprise](https://github.com/ASU/asu-salesforce-metadata)
 
-## Steps to install
+### Steps to install
 1. Fork the repository
 2. Run the following in Terminal:  
 `mkdir -p /usr/local/lib/node_modules`  
@@ -8,7 +9,7 @@
 `git clone https://github.com/<username>/asu-design-system.git @asu-design-system`  
 3. Follow the README setup instructions for the ASU Design System: https://github.com/ASU/asu-unity-stack
 
-## Steps to update
+### Steps to update
 1. Run the following in Terminal:  
 `npm -g install @asu-design-system/components-library@dev`  
 `npm -g install @asu-design-system/bootstrap4-theme@dev`  
