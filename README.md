@@ -7,7 +7,7 @@
 `mkdir -p /usr/local/lib/node_modules`  
 `cd /usr/local/lib/node_modules`  
 `git clone https://github.com/<username>/asu-design-system.git @asu-design-system`  
-3. Follow the README setup instructions for the ASU Design System: https://github.com/ASU/asu-unity-stack
+3. Follow the [README setup instructions](https://github.com/ASU/asu-unity-stack) for the ASU Design System
 
 ### Steps to update
 1. Run the following in Terminal:  
