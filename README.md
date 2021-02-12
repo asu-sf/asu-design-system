@@ -25,7 +25,7 @@
 `sudo npm -g install @asu-design-system/components-library@dev`  
 `sudo npm -g install @asu-design-system/bootstrap4-theme@dev`  
 `sudo npm -g install @asu-design-system/design-tokens@dev`  
-`git add .`  
-`git commit -m "Updating ASU Design System from source"`  
-`git push origin main`  
+`sudo git add .`  
+`sudo git commit -m "Updating ASU Design System from source"`  
+`sudo git push origin main`  
 2. Submit a pull request into mgilardi/asu-design-system
