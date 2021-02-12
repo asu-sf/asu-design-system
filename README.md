@@ -9,8 +9,7 @@
 ### Steps to install
 1. Fork the repository
 2. Create the directory for npm and clone the repository:  
-`sudo su`  
-`mkdir -p /usr/local/lib/node_modules`  
+`sudo mkdir -p /usr/local/lib/node_modules`  
 `cd /usr/local/lib/node_modules`  
 `git clone https://github.com/<username>/asu-design-system.git @asu-design-system`  
 `cd @asu-design-system`  
@@ -19,15 +18,14 @@
 
 ### Steps to update
 1. Update your fork:  
-`sudo su`  
 `cd /usr/local/lib/node_modules/@asu-design-system`  
 `git pull mgilardi main`  
 `git push origin main`  
 2. Update @asu-design-system and push to your fork:  
-`npm -g install @asu-design-system/components-library@dev`  
-`npm -g install @asu-design-system/bootstrap4-theme@dev`  
-`npm -g install @asu-design-system/design-tokens@dev`  
-`git add .`  
-`git commit -m "Updating ASU Design System from source"`  
-`git push origin main`  
+`sudo npm -g install @asu-design-system/components-library@dev`  
+`sudo npm -g install @asu-design-system/bootstrap4-theme@dev`  
+`sudo npm -g install @asu-design-system/design-tokens@dev`  
+`sudo git add .`  
+`sudo git commit -m "Updating ASU Design System from source"`  
+`sudo git push origin main`  
 2. Submit a pull request into mgilardi/asu-design-system
