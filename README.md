@@ -1,6 +1,8 @@
 # asu-design-system
 ## [ASU Design System](https://unity.web.asu.edu) implementation for [ASU Salesforce Enterprise](https://github.com/ASU/asu-salesforce-metadata)
 
+*Until Salesforce support changes are merged into ASU/asu-unity-stack, we will utilize https://github.com/rnordmanASU/scripts as a custom build that is built from mgilardi/asu-unity-stack:dev.*
+
 ### Prerequisites
 1. [Install Homebrew](https://brew.sh/)
 2. Install npm:
