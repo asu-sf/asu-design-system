@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 07 Aug 2020 04:14:19 GMT
+ * Generated on Mon, 08 Mar 2021 02:54:49 GMT
  */
 
 export const AssetFontIconName = "FontAwesome";
@@ -178,6 +178,8 @@ export const ComponentButtonBadgeHeight = "1.375rem"; // Magic number: 22px not 
 export const ComponentButtonCloseHeight = "2rem";
 export const ComponentButtonCloseOpacity = "50%";
 export const ComponentButtonCloseWidth = "2rem";
+export const ComponentButtonClosePaddingTop = "0";
+export const ComponentButtonClosePaddingBottom = "0.125rem";
 export const ComponentButtonCloseDisabledOpacity = "100%";
 export const ComponentButtonCloseWhiteBackgroundColor = "#ffffff";
 export const ComponentButtonCloseGrayBackgroundColor = "#bfbfbf";
@@ -408,3 +410,23 @@ export const ComponentPagerDisabledOpacity = "50%";
 export const ComponentPagerIconHeight = "1rem";
 export const ComponentPagerIconWidth = "1rem";
 export const ComponentPagerIconMargin = "0.25rem";
+export const ComponentTabColor = "#000000";
+export const ComponentTabBorderWidth = "0rem";
+export const ComponentTabBorderColor = "#000000";
+export const ComponentTabBorder = "none";
+export const ComponentTabOutline = "0";
+export const ComponentTabBackgroundColor = "#000000";
+export const ComponentTabBorderRadius = "0rem";
+export const ComponentTabDisplay = "block";
+export const ComponentTabFontWeight = "bold";
+export const ComponentTabTextDecoration = "none";
+export const ComponentTabLineHeight = "1rem";
+export const ComponentTabHoverStateTransform = "scale(1.1)";
+export const ComponentTabActiveStateTransform = "scale(1)";
+export const ComponentTabPadding = "1rem 2rem";
+export const ComponentTabContainerBorderBottom = "1px solid #747474";
+export const ComponentTabContainerBorderColor = "#747474";
+export const ComponentTabContainerBorderWidthPx = "1px";
+export const ComponentTabActiveBorderBottom = "8px solid #8c1d40";
+export const ComponentTabActiveColor = "#8c1d40";
+export const ComponentTabDisabledOpacity = "50%";

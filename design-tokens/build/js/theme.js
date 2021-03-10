@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 07 Aug 2020 04:14:18 GMT
+ * Generated on Mon, 08 Mar 2021 02:54:48 GMT
  */
 
 module.exports = {
@@ -3146,6 +3146,34 @@ module.exports = {
             "button",
             "close",
             "width"
+          ]
+        },
+        "padding-top": {
+          "value": "0",
+          "original": {
+            "value": "0"
+          },
+          "name": "ComponentButtonClosePaddingTop",
+          "attributes": {},
+          "path": [
+            "component",
+            "button",
+            "close",
+            "padding-top"
+          ]
+        },
+        "padding-bottom": {
+          "value": "0.125rem",
+          "original": {
+            "value": "0.125rem"
+          },
+          "name": "ComponentButtonClosePaddingBottom",
+          "attributes": {},
+          "path": [
+            "component",
+            "button",
+            "close",
+            "padding-bottom"
           ]
         },
         "disabled": {
@@ -7143,6 +7171,309 @@ module.exports = {
             "pager",
             "icon",
             "margin"
+          ]
+        }
+      }
+    },
+    "tab": {
+      "color": {
+        "value": "#000000",
+        "original": {
+          "value": "rgba(0,0,0,0)"
+        },
+        "name": "ComponentTabColor",
+        "attributes": {
+          "category": "color",
+          "type": "font"
+        },
+        "path": [
+          "component",
+          "tab",
+          "color"
+        ]
+      },
+      "border-width": {
+        "value": "0rem",
+        "original": {
+          "value": "0"
+        },
+        "name": "ComponentTabBorderWidth",
+        "attributes": {
+          "category": "size",
+          "type": "border",
+          "item": "width"
+        },
+        "path": [
+          "component",
+          "tab",
+          "border-width"
+        ]
+      },
+      "border-color": {
+        "value": "#000000",
+        "original": {
+          "value": "rgba(0,0,0,0)"
+        },
+        "name": "ComponentTabBorderColor",
+        "attributes": {
+          "category": "color",
+          "type": "border"
+        },
+        "path": [
+          "component",
+          "tab",
+          "border-color"
+        ]
+      },
+      "border": {
+        "value": "none",
+        "original": {
+          "value": "none"
+        },
+        "name": "ComponentTabBorder",
+        "attributes": {},
+        "path": [
+          "component",
+          "tab",
+          "border"
+        ]
+      },
+      "outline": {
+        "value": "0",
+        "original": {
+          "value": "0"
+        },
+        "name": "ComponentTabOutline",
+        "attributes": {},
+        "path": [
+          "component",
+          "tab",
+          "outline"
+        ]
+      },
+      "background-color": {
+        "value": "#000000",
+        "original": {
+          "value": "inherit"
+        },
+        "name": "ComponentTabBackgroundColor",
+        "attributes": {
+          "category": "color",
+          "type": "background"
+        },
+        "path": [
+          "component",
+          "tab",
+          "background-color"
+        ]
+      },
+      "border-radius": {
+        "value": "0rem",
+        "original": {
+          "value": "0"
+        },
+        "name": "ComponentTabBorderRadius",
+        "attributes": {
+          "category": "size",
+          "type": "border",
+          "item": "width"
+        },
+        "path": [
+          "component",
+          "tab",
+          "border-radius"
+        ]
+      },
+      "display": {
+        "value": "block",
+        "original": {
+          "value": "block"
+        },
+        "name": "ComponentTabDisplay",
+        "attributes": {},
+        "path": [
+          "component",
+          "tab",
+          "display"
+        ]
+      },
+      "font-weight": {
+        "value": "bold",
+        "original": {
+          "value": "bold"
+        },
+        "name": "ComponentTabFontWeight",
+        "attributes": {},
+        "path": [
+          "component",
+          "tab",
+          "font-weight"
+        ]
+      },
+      "text-decoration": {
+        "value": "none",
+        "original": {
+          "value": "none"
+        },
+        "name": "ComponentTabTextDecoration",
+        "attributes": {},
+        "path": [
+          "component",
+          "tab",
+          "text-decoration"
+        ]
+      },
+      "line-height": {
+        "value": "1rem",
+        "original": {
+          "value": "1"
+        },
+        "name": "ComponentTabLineHeight",
+        "attributes": {
+          "category": "size",
+          "type": "line-height"
+        },
+        "path": [
+          "component",
+          "tab",
+          "line-height"
+        ]
+      },
+      "hover-state-transform": {
+        "value": "scale(1.1)",
+        "original": {
+          "value": "scale(1.1)"
+        },
+        "name": "ComponentTabHoverStateTransform",
+        "attributes": {},
+        "path": [
+          "component",
+          "tab",
+          "hover-state-transform"
+        ]
+      },
+      "active-state-transform": {
+        "value": "scale(1)",
+        "original": {
+          "value": "scale(1)"
+        },
+        "name": "ComponentTabActiveStateTransform",
+        "attributes": {},
+        "path": [
+          "component",
+          "tab",
+          "active-state-transform"
+        ]
+      },
+      "padding": {
+        "value": "1rem 2rem",
+        "original": {
+          "value": "{size.spacing.2.value} {size.spacing.4.value}"
+        },
+        "name": "ComponentTabPadding",
+        "attributes": {
+          "category": "size",
+          "type": "padding"
+        },
+        "path": [
+          "component",
+          "tab",
+          "padding"
+        ]
+      },
+      "container": {
+        "border-bottom": {
+          "value": "1px solid #747474",
+          "original": {
+            "value": "1px solid {color.base.gray.5.value}"
+          },
+          "name": "ComponentTabContainerBorderBottom",
+          "attributes": {},
+          "path": [
+            "component",
+            "tab",
+            "container",
+            "border-bottom"
+          ]
+        },
+        "border-color": {
+          "value": "#747474",
+          "original": {
+            "value": "{color.base.gray.5.value}"
+          },
+          "name": "ComponentTabContainerBorderColor",
+          "attributes": {
+            "category": "color",
+            "type": "border"
+          },
+          "path": [
+            "component",
+            "tab",
+            "container",
+            "border-color"
+          ]
+        },
+        "border-width-px": {
+          "value": "1px",
+          "original": {
+            "value": "1px"
+          },
+          "name": "ComponentTabContainerBorderWidthPx",
+          "attributes": {},
+          "path": [
+            "component",
+            "tab",
+            "container",
+            "border-width-px"
+          ]
+        }
+      },
+      "active": {
+        "border-bottom": {
+          "value": "8px solid #8c1d40",
+          "original": {
+            "value": "8px solid {color.base.maroon.value}"
+          },
+          "name": "ComponentTabActiveBorderBottom",
+          "attributes": {},
+          "path": [
+            "component",
+            "tab",
+            "active",
+            "border-bottom"
+          ]
+        },
+        "color": {
+          "value": "#8c1d40",
+          "original": {
+            "value": "{color.base.maroon.value}"
+          },
+          "name": "ComponentTabActiveColor",
+          "attributes": {
+            "category": "color",
+            "type": "font"
+          },
+          "path": [
+            "component",
+            "tab",
+            "active",
+            "color"
+          ]
+        }
+      },
+      "disabled": {
+        "opacity": {
+          "value": "50%",
+          "original": {
+            "value": "50%"
+          },
+          "name": "ComponentTabDisabledOpacity",
+          "attributes": {},
+          "path": [
+            "component",
+            "tab",
+            "disabled",
+            "opacity"
           ]
         }
       }
