@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 08 Mar 2021 02:54:48 GMT
+ * Generated on Thu, 18 Mar 2021 15:29:51 GMT
  */
 
 module.exports = {
@@ -3118,9 +3118,9 @@ module.exports = {
           ]
         },
         "opacity": {
-          "value": "50%",
+          "value": "100%",
           "original": {
-            "value": "50%"
+            "value": "100%"
           },
           "name": "ComponentButtonCloseOpacity",
           "attributes": {},

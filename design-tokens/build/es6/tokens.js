@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 08 Mar 2021 02:54:49 GMT
+ * Generated on Thu, 18 Mar 2021 15:29:52 GMT
  */
 
 export const AssetFontIconName = "FontAwesome";
@@ -176,7 +176,7 @@ export const ComponentButtonBadgeBorderRadius = "400rem";
 export const ComponentButtonBadgeFontWeight = "normal";
 export const ComponentButtonBadgeHeight = "1.375rem"; // Magic number: 22px not a multiple of 8
 export const ComponentButtonCloseHeight = "2rem";
-export const ComponentButtonCloseOpacity = "50%";
+export const ComponentButtonCloseOpacity = "100%";
 export const ComponentButtonCloseWidth = "2rem";
 export const ComponentButtonClosePaddingTop = "0";
 export const ComponentButtonClosePaddingBottom = "0.125rem";
