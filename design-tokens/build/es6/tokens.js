@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 18 Mar 2021 15:29:52 GMT
+ * Generated on Tue, 30 Mar 2021 19:14:32 GMT
  */
 
 export const AssetFontIconName = "FontAwesome";
@@ -159,7 +159,7 @@ export const ComponentButtonFontWeight = "bold";
 export const ComponentButtonTextDecoration = "none";
 export const ComponentButtonLineHeight = "1rem";
 export const ComponentButtonMaxWidth = "17.5rem";
-export const ComponentButtonHoverStateTransform = "scale(1.1)";
+export const ComponentButtonHoverStateTransform = "scale(1.05)";
 export const ComponentButtonActiveStateTransform = "scale(1)";
 export const ComponentButtonPadding = "1rem 2rem";
 export const ComponentButtonPaddingY = "1rem";

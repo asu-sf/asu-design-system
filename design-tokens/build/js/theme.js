@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 18 Mar 2021 15:29:51 GMT
+ * Generated on Tue, 30 Mar 2021 19:14:32 GMT
  */
 
 module.exports = {
@@ -2860,9 +2860,9 @@ module.exports = {
         ]
       },
       "hover-state-transform": {
-        "value": "scale(1.1)",
+        "value": "scale(1.05)",
         "original": {
-          "value": "scale(1.1)"
+          "value": "scale(1.05)"
         },
         "name": "ComponentButtonHoverStateTransform",
         "attributes": {},
