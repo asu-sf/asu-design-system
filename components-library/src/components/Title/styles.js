@@ -1,33 +1,36 @@
-
 /* eslint-disable react/prop-types */
 
-import { forwardRef } from "preact/compat";
 import { cx, css } from "@emotion/css";
-import {
-  containerSize,
-  BreakpointLg,
-  breakpointForMin
-} from "../../theme";
+import { forwardRef } from "preact/compat";
+
+import { focusStyle, BreakpointLg, breakpointForMin } from "../../theme";
 
 /**
  * Title
  **/
 const titleStyles = breakpoint => css`
+  a {
+    ${focusStyle}
+  }
   .title {
     line-height: 1;
     font-size: 1rem;
     font-weight: 700;
     margin: 0 2rem 1.5rem 2rem;
     letter-spacing: -1px;
-    background-image: linear-gradient(to right,transparent 51%,#FFC626 51%,95%,transparent);
+    background-image: linear-gradient(
+      to right,
+      transparent 51%,
+      #ffc626 51%,
+      95%,
+      transparent
+    );
     background-position: 0 0;
     background-size: 200%;
     display: inline-block;
     /*padding-right: 4px;*/
     transition: 0.5s cubic-bezier(0.19, 1, 0.19, 1);
     transition-duration: 1s;
-
-
 
     &.active {
       background-position: -200%;

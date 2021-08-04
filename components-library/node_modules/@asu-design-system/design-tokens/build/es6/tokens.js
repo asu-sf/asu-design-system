@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 30 Mar 2021 19:14:32 GMT
+ * Generated on Wed, 28 Jul 2021 18:27:31 GMT
  */
 
 export const AssetFontIconName = "FontAwesome";
@@ -281,19 +281,29 @@ export const ComponentHeadingHighlightBlackTextColor = "#fafafa";
 export const ComponentHeadingHighlightWhiteBgColor = "#ffffff";
 export const ComponentHeadingHighlightWhiteTextColor = "#191919";
 export const ComponentHeadingOneFontSize = "4rem";
-export const ComponentHeadingOneLetterSpacing = "-0.035em";
+export const ComponentHeadingOneLineHeight = "4.25rem";
+export const ComponentHeadingOneLetterSpacing = "-0.14rem";
 export const ComponentHeadingOneArticleFontSize = "3rem";
+export const ComponentHeadingOneArticleLineHeight = "3.25rem";
+export const ComponentHeadingOneArticleLetterSpacing = "-0.105rem";
 export const ComponentHeadingOneMobileFontSize = "2.25rem";
+export const ComponentHeadingOneMobileLineHeight = "2.5rem";
+export const ComponentHeadingOneMobileLetterSpacing = "-0.078rem";
 export const ComponentHeadingTwoFontSize = "2.5rem";
-export const ComponentHeadingTwoLetterSpacing = "-0.035em";
+export const ComponentHeadingTwoLineHeight = "2.75rem";
+export const ComponentHeadingTwoLetterSpacing = "-0.0875rem";
 export const ComponentHeadingTwoMobileFontSize = "2rem";
-export const ComponentHeadingTwoMobileLetterSpacing = "-0.035em";
+export const ComponentHeadingTwoMobileLineHeight = "2.125rem";
+export const ComponentHeadingTwoMobileLetterSpacing = "-0.07rem";
 export const ComponentHeadingThreeFontSize = "1.5rem";
-export const ComponentHeadingThreeLetterSpacing = "-0.035em";
+export const ComponentHeadingThreeLineHeight = "1.75rem";
+export const ComponentHeadingThreeLetterSpacing = "-0.0525rem";
 export const ComponentHeadingFourFontSize = "1.25rem";
-export const ComponentHeadingFourLetterSpacing = "-0.025em";
+export const ComponentHeadingFourLineHeight = "1.625rem";
+export const ComponentHeadingFourLetterSpacing = "-0.01875rem";
 export const ComponentHeadingFiveFontSize = "1rem";
-export const ComponentHeadingFiveLetterSpacing = "-0.015em";
+export const ComponentHeadingFiveLineHeight = "1.5rem";
+export const ComponentHeadingFiveLetterSpacing = "-0.015rem";
 export const ComponentHeroesContainerMdAndLgWidthPercent = "100%";
 export const ComponentHeroesContainerMdAndLgUdsHeroTextLineHeight = "2rem";
 export const ComponentHeroesUdsHeroBackgroundSize = "cover";
@@ -402,7 +412,7 @@ export const ComponentPagerMaxWidth = "17.5rem";
 export const ComponentPagerHoverStateTransform = "scale(1.1)";
 export const ComponentPagerActiveStateTransform = "scale(1)";
 export const ComponentPagerPadding = "1rem 2rem";
-export const ComponentPagerHoverTextDecoration = "underline";
+export const ComponentPagerHoverTextDecoration = "none";
 export const ComponentPagerHoverColor = "#ffffff";
 export const ComponentPagerActiveBackgroundColor = "#8c1d40";
 export const ComponentPagerActiveColor = "#ffffff";

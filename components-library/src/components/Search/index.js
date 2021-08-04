@@ -1,12 +1,11 @@
-
 /* eslint-disable react/prop-types */
 
 import { useRef, useEffect, useCallback } from "preact/compat";
-import * as S from "./styles";
 import PropTypes from "prop-types";
 
-const Search = ({ type, open, inputRef, mobile, ...props }) => {
+import * as S from "./styles";
 
+const Search = ({ type, open, inputRef, mobile, ...props }) => {
   switch (type) {
     case "d7":
       return <div>Drupal 7</div>;
@@ -26,14 +25,20 @@ const Search = ({ type, open, inputRef, mobile, ...props }) => {
             type="search"
             {...(inputRef ? { ref: inputRef } : {})}
             aria-labelledby="asu-search-label"
-            {...mobile ? {placeHolder: "Search ASU"} : {}}
+            {...(mobile ? { placeHolder: "Search asu.edu" } : {})}
             required
           />
 
-          <label class="univeral-search" id="asu-search-label" onmousedown={() => event.preventDefault() /** prevent label click from removing input focus */ }>
-            Search ASU
+          <label
+            class="universal-search"
+            id="asu-search-label"
+            onmousedown={
+              () =>
+                event.preventDefault() /** prevent label click from removing input focus */
+            }
+          >
+            Search asu.edu
           </label>
-
         </form>
       );
   }
@@ -50,47 +55,48 @@ Search.propTypes = {
     // Or the instance of a DOM native element (see the note about SSR)
     PropTypes.shape({ current: PropTypes.instanceOf(PropTypes.element) }),
   ]),
-  mobile: PropTypes.bool
+  mobile: PropTypes.bool,
 };
 
 Search.defaultProps = {};
 
-const UniversalSearch = ({ type, open, setOpen, mobile}) => {
+const UniversalSearch = ({ type, open, setOpen, mobile }) => {
   //const toggle = () => setOpen(oldOpen => !oldOpen);
 
   // ref to input dom node
   const inputRef = useRef(null);
 
-
   useEffect(() => {
-
     if (inputRef.current.value) {
       setOpen(true);
     }
   }, []);
 
-  const onBlurCallBack = useCallback( e => {
+  const onBlurCallBack = useCallback(
+    e => {
+      if (inputRef.current.value) {
+        return;
+      }
 
-    if (inputRef.current.value) {
-      return;
-    }
+      // only change state if focus moves away from
+      // container element
+      if (!e.currentTarget.contains(e.relatedTarget)) {
+        // remove focus
+        setOpen(false);
+      }
+    },
+    [open]
+  );
 
-    // only change state if focus moves away from
-    // container element
-    if (!e.currentTarget.contains(e.relatedTarget)) {
-      // remove focus
-      setOpen(false);
-    }
-  }, [open]);
-
-
-  const onClickCallback = useCallback((e) => {
-    //if (open !== true) {
+  const onClickCallback = useCallback(
+    e => {
+      //if (open !== true) {
       setOpen(true);
       inputRef.current.focus();
-    //}
-  }, [open]);
-
+      //}
+    },
+    [open]
+  );
 
   const onFocusCallback = useCallback(() => {
     setOpen(true);
@@ -114,7 +120,7 @@ UniversalSearch.propTypes = {
   type: PropTypes.string,
   open: PropTypes.bool,
   setOpen: PropTypes.func,
-  mobile: PropTypes.bool
+  mobile: PropTypes.bool,
 };
 
 UniversalSearch.defaultProps = {

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 30 Mar 2021 19:14:32 GMT
+ * Generated on Wed, 28 Jul 2021 18:27:31 GMT
  */
 
 module.exports = {
@@ -4941,10 +4941,27 @@ module.exports = {
             "font-size"
           ]
         },
-        "letter-spacing": {
-          "value": "-0.035em",
+        "line-height": {
+          "value": "4.25rem",
           "original": {
-            "value": "-0.035em"
+            "value": "4.25rem"
+          },
+          "name": "ComponentHeadingOneLineHeight",
+          "attributes": {
+            "category": "size",
+            "type": "line-height"
+          },
+          "path": [
+            "component",
+            "heading",
+            "one",
+            "line-height"
+          ]
+        },
+        "letter-spacing": {
+          "value": "-0.14rem",
+          "original": {
+            "value": "-0.14rem"
           },
           "name": "ComponentHeadingOneLetterSpacing",
           "attributes": {},
@@ -4973,6 +4990,39 @@ module.exports = {
               "article",
               "font-size"
             ]
+          },
+          "line-height": {
+            "value": "3.25rem",
+            "original": {
+              "value": "3.25rem"
+            },
+            "name": "ComponentHeadingOneArticleLineHeight",
+            "attributes": {
+              "category": "size",
+              "type": "line-height"
+            },
+            "path": [
+              "component",
+              "heading",
+              "one",
+              "article",
+              "line-height"
+            ]
+          },
+          "letter-spacing": {
+            "value": "-0.105rem",
+            "original": {
+              "value": "-0.105rem"
+            },
+            "name": "ComponentHeadingOneArticleLetterSpacing",
+            "attributes": {},
+            "path": [
+              "component",
+              "heading",
+              "one",
+              "article",
+              "letter-spacing"
+            ]
           }
         },
         "mobile": {
@@ -4992,6 +5042,39 @@ module.exports = {
               "one",
               "mobile",
               "font-size"
+            ]
+          },
+          "line-height": {
+            "value": "2.5rem",
+            "original": {
+              "value": "2.5rem"
+            },
+            "name": "ComponentHeadingOneMobileLineHeight",
+            "attributes": {
+              "category": "size",
+              "type": "line-height"
+            },
+            "path": [
+              "component",
+              "heading",
+              "one",
+              "mobile",
+              "line-height"
+            ]
+          },
+          "letter-spacing": {
+            "value": "-0.078rem",
+            "original": {
+              "value": "-0.078rem"
+            },
+            "name": "ComponentHeadingOneMobileLetterSpacing",
+            "attributes": {},
+            "path": [
+              "component",
+              "heading",
+              "one",
+              "mobile",
+              "letter-spacing"
             ]
           }
         }
@@ -5014,10 +5097,27 @@ module.exports = {
             "font-size"
           ]
         },
-        "letter-spacing": {
-          "value": "-0.035em",
+        "line-height": {
+          "value": "2.75rem",
           "original": {
-            "value": "-0.035em"
+            "value": "2.75rem"
+          },
+          "name": "ComponentHeadingTwoLineHeight",
+          "attributes": {
+            "category": "size",
+            "type": "line-height"
+          },
+          "path": [
+            "component",
+            "heading",
+            "two",
+            "line-height"
+          ]
+        },
+        "letter-spacing": {
+          "value": "-0.0875rem",
+          "original": {
+            "value": "-0.0875rem"
           },
           "name": "ComponentHeadingTwoLetterSpacing",
           "attributes": {},
@@ -5047,10 +5147,28 @@ module.exports = {
               "font-size"
             ]
           },
-          "letter-spacing": {
-            "value": "-0.035em",
+          "line-height": {
+            "value": "2.125rem",
             "original": {
-              "value": "-0.035em"
+              "value": "2.125rem"
+            },
+            "name": "ComponentHeadingTwoMobileLineHeight",
+            "attributes": {
+              "category": "size",
+              "type": "line-height"
+            },
+            "path": [
+              "component",
+              "heading",
+              "two",
+              "mobile",
+              "line-height"
+            ]
+          },
+          "letter-spacing": {
+            "value": "-0.07rem",
+            "original": {
+              "value": "-0.07rem"
             },
             "name": "ComponentHeadingTwoMobileLetterSpacing",
             "attributes": {},
@@ -5082,10 +5200,27 @@ module.exports = {
             "font-size"
           ]
         },
-        "letter-spacing": {
-          "value": "-0.035em",
+        "line-height": {
+          "value": "1.75rem",
           "original": {
-            "value": "-0.035em"
+            "value": "1.75rem"
+          },
+          "name": "ComponentHeadingThreeLineHeight",
+          "attributes": {
+            "category": "size",
+            "type": "line-height"
+          },
+          "path": [
+            "component",
+            "heading",
+            "three",
+            "line-height"
+          ]
+        },
+        "letter-spacing": {
+          "value": "-0.0525rem",
+          "original": {
+            "value": "-0.0525rem"
           },
           "name": "ComponentHeadingThreeLetterSpacing",
           "attributes": {},
@@ -5115,10 +5250,27 @@ module.exports = {
             "font-size"
           ]
         },
-        "letter-spacing": {
-          "value": "-0.025em",
+        "line-height": {
+          "value": "1.625rem",
           "original": {
-            "value": "-0.025em"
+            "value": "1.625rem"
+          },
+          "name": "ComponentHeadingFourLineHeight",
+          "attributes": {
+            "category": "size",
+            "type": "line-height"
+          },
+          "path": [
+            "component",
+            "heading",
+            "four",
+            "line-height"
+          ]
+        },
+        "letter-spacing": {
+          "value": "-0.01875rem",
+          "original": {
+            "value": "-0.01875rem"
           },
           "name": "ComponentHeadingFourLetterSpacing",
           "attributes": {},
@@ -5148,10 +5300,27 @@ module.exports = {
             "font-size"
           ]
         },
-        "letter-spacing": {
-          "value": "-0.015em",
+        "line-height": {
+          "value": "1.5rem",
           "original": {
-            "value": "-0.015em"
+            "value": "1.5rem"
+          },
+          "name": "ComponentHeadingFiveLineHeight",
+          "attributes": {
+            "category": "size",
+            "type": "line-height"
+          },
+          "path": [
+            "component",
+            "heading",
+            "five",
+            "line-height"
+          ]
+        },
+        "letter-spacing": {
+          "value": "-0.015rem",
+          "original": {
+            "value": "-0.015rem"
           },
           "name": "ComponentHeadingFiveLetterSpacing",
           "attributes": {},
@@ -7041,9 +7210,9 @@ module.exports = {
       },
       "hover": {
         "text-decoration": {
-          "value": "underline",
+          "value": "none",
           "original": {
-            "value": "underline"
+            "value": "none"
           },
           "name": "ComponentPagerHoverTextDecoration",
           "attributes": {},

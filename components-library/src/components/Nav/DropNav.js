@@ -2,6 +2,7 @@
 import { cx } from "@emotion/css";
 import { forwardRef } from "preact/compat";
 import PropTypes from "prop-types";
+
 import { Button } from "../Button";
 import * as S from "./styles";
 
@@ -62,8 +63,8 @@ const DropNav = forwardRef(
           onClick={e => {}}
           tabIndex="0"
           ref={ref}
-          data-onclick-identifier = {"toggle-dropdown." + pIndex}
-          data-onclick-dropdown-open = "false"
+          data-onclick-identifier={`toggle-dropdown.${pIndex}`}
+          data-onclick-dropdown-open="false"
         >
           {text}{" "}
           <S.IconChevronDown sr={text} className={isOpen ? "open" : ""} />
@@ -71,12 +72,13 @@ const DropNav = forwardRef(
 
         <S.DropdownContainer
           {...{ open: isOpen }}
-          class={mega ? "mega" : ""}
+          class={`header-dropdown-${pIndex}${mega ? " mega" : ""}`}
           {...(buttons
             ? {
                 buttons: buttons.map((item, index) => {
                   return (
                     <Button
+                      key={`button-${index}`}
                       href={item.href}
                       {...(item.color ? { [item.color]: true } : {})}
                       medium

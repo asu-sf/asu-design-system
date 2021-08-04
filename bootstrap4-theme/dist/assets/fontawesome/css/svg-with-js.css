@@ -1,5 +1,5 @@
 /*!
- * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 svg:not(:root).svg-inline--fa {
@@ -9,8 +9,7 @@ svg:not(:root).svg-inline--fa {
   display: inline-block;
   font-size: inherit;
   height: 1em;
-  overflow: visible;
-  vertical-align: -.125em; }
+  overflow: visible; }
   .svg-inline--fa.fa-lg {
     vertical-align: -.225em; }
   .svg-inline--fa.fa-w-1 {
