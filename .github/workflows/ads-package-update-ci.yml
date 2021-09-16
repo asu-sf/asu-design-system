@@ -1,4 +1,4 @@
-name: ASU Design System for Salesforce CI
+name: ASU Design System Package Update CI
 on:
   workflow_dispatch:
   schedule:
