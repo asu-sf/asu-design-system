@@ -63,8 +63,8 @@ const DropNav = forwardRef(
           onClick={e => {}}
           tabIndex="0"
           ref={ref}
-          data-onclick-identifier={`toggle-dropdown.${pIndex}`}
-          data-onclick-dropdown-open="false"
+          data-onclick-identifier = {`toggle-dropdown.${  pIndex}`}
+          data-onclick-dropdown-open = "false"
         >
           {text}{" "}
           <S.IconChevronDown sr={text} className={isOpen ? "open" : ""} />
@@ -72,13 +72,12 @@ const DropNav = forwardRef(
 
         <S.DropdownContainer
           {...{ open: isOpen }}
-          class={`header-dropdown-${pIndex}${mega ? " mega" : ""}`}
+          class={mega ? "mega" : ""}
           {...(buttons
             ? {
                 buttons: buttons.map((item, index) => {
                   return (
                     <Button
-                      key={`button-${index}`}
                       href={item.href}
                       {...(item.color ? { [item.color]: true } : {})}
                       medium

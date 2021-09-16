@@ -21,7 +21,7 @@ Logo.defaultProps = {
   alt: "Arizona State University",
   src: "https://www.asu.edu/asuthemes/5.0/assets/arizona-state-university-logo-vertical.png",
   mobileSrc: "https://www.asu.edu/asuthemes/5.0/assets/arizona-state-university-logo.png",
-  brandLink: "https://www.asu.edu",
+  brandLink: "https://asu.edu",
 };
 
 export { Logo };

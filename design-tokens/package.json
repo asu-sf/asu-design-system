@@ -1,14 +1,50 @@
 {
+  "_from": "@asu-design-system/design-tokens@^1.1.0",
+  "_id": "@asu-design-system/design-tokens@1.1.5",
+  "_inBundle": false,
+  "_integrity": "sha512-B7B+QPrlzHlipi6eMaRJCUUov9oPSKnTpBjXfIgl2A0d9LYu0uRmCDGuSQOiy8tdzels5yG+juiL9ZzJYLAbMg==",
+  "_location": "/@asu-design-system/design-tokens",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@asu-design-system/design-tokens@^1.1.0",
+    "name": "@asu-design-system/design-tokens",
+    "escapedName": "@asu-design-system%2fdesign-tokens",
+    "scope": "@asu-design-system",
+    "rawSpec": "^1.1.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.0"
+  },
+  "_requiredBy": [
+    "/@asu-design-system/components-library"
+  ],
+  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fdesign-tokens/-/design-tokens-1.1.5.tgz",
+  "_shasum": "b977a9e486960e61f5f424df5a2f90c407c0cdbd",
+  "_spec": "@asu-design-system/design-tokens@^1.1.0",
+  "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package/node_modules/@asu-design-system/components-library",
+  "bugs": {
+    "url": "https://github.com/asu/asu-unity-stack/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "> *Style once, use everywhere.*",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "fs-extra": "^9.0.1",
+    "semantic-release": "^17.4.2",
+    "semantic-release-monorepo": "^7.0.4",
+    "style-dictionary": "^2.9.0"
+  },
+  "homepage": "https://github.com/asu/asu-unity-stack#readme",
   "name": "@asu-design-system/design-tokens",
-  "version": "1.1.5",
-  "description": "",
   "publishConfig": {
     "access": "restricted",
     "registry": "http://registry.web.asu.edu/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/asu/asu-unity-stack",
+    "url": "git+https://github.com/asu/asu-unity-stack.git",
     "directory": "packages/design-tokens"
   },
   "scripts": {
@@ -17,11 +53,5 @@
     "prepublishOnly": "yarn run build",
     "test": "echo \"Error: no test specified\""
   },
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "fs-extra": "^9.0.1",
-    "semantic-release": "^17.4.2",
-    "semantic-release-monorepo": "^7.0.4",
-    "style-dictionary": "^2.9.0"
-  }
+  "version": "1.1.5"
 }

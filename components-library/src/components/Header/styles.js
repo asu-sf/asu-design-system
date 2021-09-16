@@ -3,7 +3,6 @@ import { cx, css } from "@emotion/css";
 import { forwardRef } from "preact/compat";
 
 import {
-  focusStyle,
   containerSize,
   primaryNavTopPadding,
   BreakpointXl,
@@ -26,6 +25,16 @@ import { titleStyles } from "../Title/styles";
 const Header = ({ children, breakpoint, ...props }) => {
   return (
     <>
+      <div id="asu-report-accessiblity">
+        <a
+          href="https://www.asu.edu/accessibility/"
+          class={css`
+            ${srOnly}
+          `}
+        >
+          Report an accessibility problem
+        </a>
+      </div>
       <header
         {...props}
         class={cx(
@@ -108,19 +117,16 @@ const universalStyles = breakpoint => css`
       justify-content: flex-end;
     }
 
-    .nav-grid {
-      align-items: center;
-    }
-
     @media (max-width: ${breakpoint}) {
       display: none;
       padding: 0;
       transition: none;
       height: auto;
 
+
       &.mobile-open {
         z-index: 998;
-        width: 100%;
+        width 100%;
         display: flex;
         justify-content: center;
       }
@@ -132,57 +138,29 @@ const universalStyles = breakpoint => css`
         justify-items: start;
         width: 100%;
 
-        > a,
-        div {
+        > a, div {
           color: #191919;
           margin-right: 0;
           text-align: center;
           width: 100%;
-          height: auto;
           font-size: 0.875rem;
           padding: 1rem 1.5rem;
           border-top: 1px solid #d0d0d0;
-          display: block;
+          display:block;
 
           :nth-child(even) {
             border-left: 1px solid #d0d0d0;
           }
-
-          &.sr-only {
-            display: none;
-          }
-        }
-
-        .login-status a {
-          color: #191919;
         }
       }
+
     }
   }
 
   @media (min-width: ${breakpoint}) {
-    // Scroll behaviors.
-    &.scrolled {
-      .universal-nav {
-        height: 0;
-        overflow: hidden;
-      }
-      a.unit-name {
-        display: none;
-        transition: 0.5s cubic-bezier(0.19, 1, 0.19, 1);
-      }
-      a.subunit-name {
-        font-size: 1.5em;
-        transition: 0.5s cubic-bezier(0.19, 1, 0.19, 1);
-      }
-      .title {
-        padding-bottom: 0;
-        margin: 16px 0;
-      }
-      .navbar-logo img {
-        height: 64px;
-        transition: 0.5s cubic-bezier(0.19, 1, 0.19, 1);
-      }
+    &.scrolled .universal-nav {
+      height: 0;
+      overflow: hidden;
     }
 
     .universal-nav {
@@ -225,18 +203,10 @@ const UniversalNavLinks = ({ children, ...props }) => {
             padding: 0.25rem 0.5rem;
             color: #484848;
             margin: 0;
-            position: relative;
-            padding-top: 0;
-            padding-bottom: 0;
-            ${focusStyle}
 
-            &:hover {
+            &:hover{
               text-decoration: underline;
             }
-          }
-
-          > a.sr-only-focusable {
-            position: relative;
           }
         `
       )}

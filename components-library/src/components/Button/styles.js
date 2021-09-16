@@ -1,3 +1,4 @@
+
 /* eslint-disable react/prop-types */
 
 import { css, cx } from "@emotion/css";
@@ -5,7 +6,6 @@ import { forwardRef } from "preact/compat";
 import PropTypes from "prop-types";
 
 import {
-  focusStyle,
   ComponentButtonHoverStateTransform,
   ComponentButtonActiveStateTransform,
   ComponentButtonDisabledOpacity,
@@ -46,6 +46,7 @@ const Button = forwardRef(
       light = true;
     }
 
+
     return (
       <Element
         {...props}
@@ -60,7 +61,7 @@ const Button = forwardRef(
             user-select: none;
             background-color: transparent;
             border: 1px solid transparent;
-            padding: 1rem 2rem !important;
+            padding: 1rem 2rem;
             font-size: 1rem;
             line-height: 1rem;
             border-radius: 400rem;
@@ -78,9 +79,8 @@ const Button = forwardRef(
               transform: ${ComponentButtonActiveStateTransform};
             }
 
-            ${focusStyle}
-
-            ${disabled && `opacity: ${ComponentButtonDisabledOpacity};`}
+            ${disabled &&
+            `opacity: ${ComponentButtonDisabledOpacity};`}
 
             ${small &&
             `
@@ -88,13 +88,13 @@ const Button = forwardRef(
               height: ${ComponentButtonSmallHeight};
               min-width: ${ComponentButtonSmallMinWidth};
               padding: ${ComponentButtonPaddingYSmall}
-                ${ComponentButtonPaddingXSmall} !important;
+                ${ComponentButtonPaddingXSmall};
             `}
 
         ${medium &&
             `
               font-size: 0.875rem;
-              padding: 0.5rem 1rem !important;
+              padding: 0.5rem 1rem;
             `}
 
         ${large &&
@@ -116,28 +116,28 @@ const Button = forwardRef(
 
         ${maroon &&
             `
-              color: #ffffff !important;
+              color: #ffffff;
               background-color: #8c1d40;
               border-color: #8c1d40;
 
               :visited:not(.btn) {
-                color: #ffffff !important;
+                color: #ffffff;
               }
             `}
 
         ${dark &&
             `
-              color: ${ComponentButtonDarkColor} !important;
+              color: ${ComponentButtonDarkColor};
               background-color: ${ComponentButtonDarkBackgroundColor};
 
               :visited:not(.btn) {
-                color: ${ComponentButtonDarkColor} !important;
+                color: ${ComponentButtonDarkColor};
               }
             `}
 
         ${light &&
             `
-              color: ${ComponentButtonLightColor} !important;
+              color: ${ComponentButtonLightColor};
               background-color: ${ComponentButtonLightBackgroundColor};
             `}
           `,
@@ -184,7 +184,7 @@ const buttonStyles = css`
     user-select: none;
     background-color: transparent;
     border: 1px solid transparent;
-    padding: 1rem 2rem !important;
+    padding: 1rem 2rem;
     font-size: 1rem;
     line-height: 1rem;
     border-radius: 400rem;
@@ -210,14 +210,14 @@ const buttonStyles = css`
       font-size: ${ComponentButtonSmallFontSize};
       height: ${ComponentButtonSmallHeight};
       min-width: ${ComponentButtonSmallMinWidth};
-      padding: ${ComponentButtonPaddingYSmall} ${ComponentButtonPaddingXSmall} !important;
+      padding: ${ComponentButtonPaddingYSmall} ${ComponentButtonPaddingXSmall};
     }
 
     &.btn-medium {
       font-size: ${ComponentButtonMediumFontSize};
       height: ${ComponentButtonMediumHeight};
       min-width: ${ComponentButtonMediumMinWidth};
-      padding: ${ComponentButtonPaddingYMedium} ${ComponentButtonPaddingXMedium} !important;
+      padding: ${ComponentButtonPaddingYMedium} ${ComponentButtonPaddingXMedium};
     }
 
     &.btn-large {

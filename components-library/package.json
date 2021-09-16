@@ -1,37 +1,36 @@
 {
-  "name": "@asu-design-system/components-library",
-  "version": "2.1.10",
-  "description": "ASU Web Standards-compliant Preact components library",
-  "main": "dist/components-library.js",
-  "module": "src/index.js",
-  "publishConfig": {
-    "access": "restricted",
-    "registry": "https://registry.web.asu.edu/"
+  "_from": "@asu-design-system/components-library",
+  "_id": "@asu-design-system/components-library@1.3.5",
+  "_inBundle": false,
+  "_integrity": "sha512-XWwXTCJ1PQV+nEhaBdAOVB1Pc7p0AFC+ncuSXWMOSW0bY1yWmbU0brDq3OOjIgAzCq9CHvREavpjhiSCZZSdbA==",
+  "_location": "/@asu-design-system/components-library",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@asu-design-system/components-library",
+    "name": "@asu-design-system/components-library",
+    "escapedName": "@asu-design-system%2fcomponents-library",
+    "scope": "@asu-design-system",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/asu/asu-unity-stack",
-    "directory": "packages/components-library"
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fcomponents-library/-/components-library-1.3.5.tgz",
+  "_shasum": "ae4871c1ed87cbb9e78a44c79d840ca39934c9cb",
+  "_spec": "@asu-design-system/components-library",
+  "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package",
+  "author": {
+    "name": "Colton Testamarck"
   },
-  "author": "Colton Testamarck",
-  "license": "UNLICENSED",
-  "private": false,
-  "scripts": {
-    "build": "webpack --progress && yarn prerender",
-    "lint": "eslint --fix 'src/**/*.{js,jsx}' --ignore-path ../../.eslintignore",
-    "test": "echo \"Error: no test specified\"",
-    "storybook": "start-storybook -p 8089 -s ./dist",
-    "build-storybook": "build-storybook -s ./dist",
-    "prerender": "node scripts/prerender-templates.js"
+  "bugs": {
+    "url": "https://github.com/asu/asu-unity-stack/issues"
   },
-  "devDependencies": {
-    "@storybook/addon-a11y": "^6.1.15",
-    "@storybook/addon-actions": "^6.1.15",
-    "@storybook/addon-knobs": "^6.1.15",
-    "@storybook/preact": "^6.1.15",
-    "semantic-release": "^17.4.2",
-    "semantic-release-monorepo": "^7.0.4"
-  },
+  "bundleDependencies": false,
   "dependencies": {
     "@asu-design-system/design-tokens": "^1.1.0",
     "@emotion/css": "^11.0.0",
@@ -43,5 +42,39 @@
     "preact": "^10.5.10",
     "preact-render-to-string": "^5.1.19",
     "prop-types": "^15.7.2"
-  }
+  },
+  "deprecated": false,
+  "description": "ASU Web Standards-compliant Preact components library",
+  "devDependencies": {
+    "@storybook/addon-a11y": "^6.1.15",
+    "@storybook/addon-actions": "^6.1.15",
+    "@storybook/addon-knobs": "^6.1.15",
+    "@storybook/preact": "^6.1.15",
+    "semantic-release": "^17.4.2",
+    "semantic-release-monorepo": "^7.0.4"
+  },
+  "homepage": "https://github.com/asu/asu-unity-stack#readme",
+  "license": "UNLICENSED",
+  "main": "dist/components-library.js",
+  "module": "src/index.js",
+  "name": "@asu-design-system/components-library",
+  "private": false,
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.web.asu.edu/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asu/asu-unity-stack.git",
+    "directory": "packages/components-library"
+  },
+  "scripts": {
+    "build": "webpack --progress && yarn prerender",
+    "build-storybook": "build-storybook -c .storybook -s public -o export",
+    "lint": "eslint --fix 'src/**/*.{js,jsx}' --ignore-path ../../.eslintignore",
+    "prerender": "node scripts/prerender-templates.js",
+    "storybook": "start-storybook -p 8089 -s ./public",
+    "test": "echo \"Error: no test specified\""
+  },
+  "version": "1.3.5"
 }
