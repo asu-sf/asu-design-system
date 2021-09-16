@@ -1,25 +1,20 @@
-name: Salesforce CI
+name: ASU Design System for Salesforce CI
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
-    
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
         with:
           path: repo
-        
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-
       - name: Download package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -29,7 +24,6 @@ jobs:
           mkdir -p $GITHUB_WORKSPACE/npm_package
           cd $GITHUB_WORKSPACE/npm_package
           npm install @asu-design-system/components-library
-          
       - name: Update files
         run: |
           cd $GITHUB_WORKSPACE/repo
