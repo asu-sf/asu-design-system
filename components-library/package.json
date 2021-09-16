@@ -1,28 +1,28 @@
 {
-  "_from": "@asu-design-system/components-library",
-  "_id": "@asu-design-system/components-library@1.3.5",
+  "_from": "@asu-design-system/components-library@dev",
+  "_id": "@asu-design-system/components-library@2.1.13",
   "_inBundle": false,
-  "_integrity": "sha512-XWwXTCJ1PQV+nEhaBdAOVB1Pc7p0AFC+ncuSXWMOSW0bY1yWmbU0brDq3OOjIgAzCq9CHvREavpjhiSCZZSdbA==",
+  "_integrity": "sha512-vqbUpuspaCM83tgG18UhLOPFz8EsGqIXiXEOzfl6lZ19PyDvL7Te3Hm/yV4jwK0xjtydLNTZxPmz2BkZMRdxCQ==",
   "_location": "/@asu-design-system/components-library",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "@asu-design-system/components-library",
+    "raw": "@asu-design-system/components-library@dev",
     "name": "@asu-design-system/components-library",
     "escapedName": "@asu-design-system%2fcomponents-library",
     "scope": "@asu-design-system",
-    "rawSpec": "",
+    "rawSpec": "dev",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "dev"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fcomponents-library/-/components-library-1.3.5.tgz",
-  "_shasum": "ae4871c1ed87cbb9e78a44c79d840ca39934c9cb",
-  "_spec": "@asu-design-system/components-library",
+  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fcomponents-library/-/components-library-2.1.13.tgz",
+  "_shasum": "6a605d03b404ac73ba7e9e1932a60c597ccaba4c",
+  "_spec": "@asu-design-system/components-library@dev",
   "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package",
   "author": {
     "name": "Colton Testamarck"
@@ -70,11 +70,11 @@
   },
   "scripts": {
     "build": "webpack --progress && yarn prerender",
-    "build-storybook": "build-storybook -c .storybook -s public -o export",
+    "build-storybook": "build-storybook -s ./dist",
     "lint": "eslint --fix 'src/**/*.{js,jsx}' --ignore-path ../../.eslintignore",
     "prerender": "node scripts/prerender-templates.js",
-    "storybook": "start-storybook -p 8089 -s ./public",
+    "storybook": "start-storybook -p 8089 -s ./dist",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "1.3.5"
+  "version": "2.1.13"
 }

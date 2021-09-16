@@ -1,27 +1,39 @@
 {
-  "name": "@asu-design-system/bootstrap4-theme",
-  "version": "6.5.5",
+  "_from": "@asu-design-system/bootstrap4-theme@dev",
+  "_id": "@asu-design-system/bootstrap4-theme@6.8.2",
+  "_inBundle": false,
+  "_integrity": "sha512-nmFAxHcAhlkk2gqGezrsRyNOq9RNntsad/kvx7gCeu2ZSFSZw5RMLHvOYrVsan2Lb4lryiEBvr+eFfYdJmDLzg==",
+  "_location": "/@asu-design-system/bootstrap4-theme",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@asu-design-system/bootstrap4-theme@dev",
+    "name": "@asu-design-system/bootstrap4-theme",
+    "escapedName": "@asu-design-system%2fbootstrap4-theme",
+    "scope": "@asu-design-system",
+    "rawSpec": "dev",
+    "saveSpec": null,
+    "fetchSpec": "dev"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fbootstrap4-theme/-/bootstrap4-theme-6.8.2.tgz",
+  "_shasum": "7a2339e0cfc0e99cef89c4e90539c97a984a5c77",
+  "_spec": "@asu-design-system/bootstrap4-theme@dev",
+  "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package",
+  "bugs": {
+    "url": "https://github.com/asu/asu-unity-stack/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
+  },
+  "deprecated": false,
   "description": "Base Bootstrap 4 UI theme for ASU Web Standards 2.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/asu/asu-unity-stack",
-    "directory": "packages/bootstrap4-theme"
-  },
-  "publishConfig": {
-    "access": "restricted",
-    "registry": "https://registry.web.asu.edu/"
-  },
-  "scripts": {
-    "jest:integration": "jest -c jest.config.js --maxWorkers=2",
-    "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration",
-    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
-    "prebuild:storybook": "yarn run test:generate-output",
-    "storybook": "start-storybook -p 9009",
-    "build-storybook": "build-storybook -s ./dist",
-    "build": "gulp",
-    "prepare": "yarn run build"
-  },
   "devDependencies": {
     "@asu-design-system/design-tokens": "^1.1.0",
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -55,7 +67,7 @@
     "node-sass": "^5.0.0",
     "popper.js": "^1.16.1",
     "postcss": "^8.2.9",
-    "sass": "^1.32.8",
+    "sass": "1.32.8",
     "sass-loader": "^10.0.2",
     "semantic-release": "^17.4.2",
     "semantic-release-monorepo": "^7.0.4",
@@ -63,8 +75,27 @@
     "style-loader": "^2.0.0"
   },
   "gitHead": "7ac8ef038f8d07c1dad2cb858db4914e178b42fb",
-  "dependencies": {
-    "react": "16.14.0",
-    "react-dom": "16.14.0"
-  }
+  "homepage": "https://github.com/asu/asu-unity-stack#readme",
+  "main": "index.js",
+  "name": "@asu-design-system/bootstrap4-theme",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.web.asu.edu/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asu/asu-unity-stack.git",
+    "directory": "packages/bootstrap4-theme"
+  },
+  "scripts": {
+    "build": "gulp",
+    "build-storybook": "build-storybook -s ./dist",
+    "jest:integration": "jest -c jest.config.js --maxWorkers=2",
+    "prebuild:storybook": "yarn run test:generate-output",
+    "prepare": "yarn run build",
+    "storybook": "start-storybook -p 9009",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
+    "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration"
+  },
+  "version": "6.8.2"
 }

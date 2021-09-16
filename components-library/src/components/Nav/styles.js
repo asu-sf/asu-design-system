@@ -1,16 +1,17 @@
 /* eslint-disable react/prop-types */
 
 import { css, cx } from "@emotion/css";
-import { forwardRef } from "preact/compat";
+import { forwardRef, useEffect, useState, useRef } from "preact/compat";
 
 import {
+  focusStyle,
   hiddenStyle,
   showReset,
   BreakpointSm,
   BreakpointLg,
   BreakpointXl,
   containerSize,
-  breakpointForMin
+  breakpointForMin,
 } from "../../theme";
 import { IconChevronDown } from "../Icons/styles";
 
@@ -28,6 +29,7 @@ const navListStyles = breakpoint => css`
 
     a {
       text-decoration: none;
+      ${focusStyle}
     }
 
     > li {
@@ -61,10 +63,16 @@ const navListStyles = breakpoint => css`
           margin-left: 0;
           top: 0.5rem;
         }
+
+        &.nav-item-selected {
+          :after {
+            width: 100%;
+          }
+        }
       }
 
       @media (min-width: ${breakpointForMin(breakpoint)}) {
-        position: static;
+        position: relative;
 
         &.dropdown-open,
         &.active {
@@ -114,6 +122,7 @@ const navListStyles = breakpoint => css`
         display: block;
         padding: 0.5rem 0.75rem;
         color: #191919;
+        white-space: nowrap;
 
         svg.fa-chevron-down {
           transition: 0.5s cubic-bezier(0.19, 1, 0.19, 1);
@@ -146,25 +155,29 @@ const navListStyles = breakpoint => css`
       > li {
         margin-right: 0;
 
-        > a {
-          padding: 1rem 1rem 0.5rem 1rem;
+        > a,
+        .drop-controls {
+          padding: 1rem 2rem 0.5rem;
           justify-content: space-between;
           display: block;
-          border-bottom: 1px solid #cccccc;
+          border-top: 1px solid #cccccc;
           align-items: center;
-
+          margin: 4px 4px;
           > svg {
             float: right;
             font-size: 1.25rem;
           }
         }
 
-        :first-of-type {
-          border-top: 1px solid #cccccc;
-        }
-
         :last-of-type {
           border-bottom: none;
+        }
+
+        &.dropdown-open {
+          > a,
+          .drop-controls {
+            border-bottom: 1px solid #cccccc;
+          }
         }
       }
 
@@ -236,18 +249,24 @@ const dropdownContainerStyles = breakpoint => css`
     justify-content: space-between;
     background: #ffffff;
     border: 1px solid #d0d0d0;
-    border-top: none;
     opacity: 0;
     visibility: hidden;
     z-index: 999;
     flex-wrap: nowrap;
     transition: 0.5s cubic-bezier(0.19, 1, 0.19, 1);
     overflow: hidden;
-    margin: -1px 0 0 0;
+    margin: 0.3px 0 0 0;
     flex-direction: column;
 
     > div {
       width: 100%;
+    }
+
+    &.aligned-right:not(.mega) {
+      position: absolute;
+      clip: auto;
+      right: 0;
+      left: auto;
     }
 
     &.mega {
@@ -296,7 +315,7 @@ const dropdownContainerStyles = breakpoint => css`
     }
 
     @media (max-width: ${breakpoint}) {
-      padding-left: 3rem;
+      padding: 1rem 2rem;
       flex-direction: column;
       max-height: 0;
       border: none;
@@ -305,6 +324,10 @@ const dropdownContainerStyles = breakpoint => css`
         position: relative;
         display: flex;
         max-height: 10000px;
+      }
+
+      h3 {
+        padding-left: 0.3rem;
       }
     }
 
@@ -334,8 +357,30 @@ const dropdownContainerStyles = breakpoint => css`
 `;
 
 const DropdownContainer = props => {
+  const dropdownRef = useRef(null);
+  const [alignedRight, setAlignedRight] = useState(false);
+
+  useEffect(() => {
+    if (window && dropdownRef.current) {
+      const elPosition = dropdownRef.current.getBoundingClientRect().left;
+      const breakpointPosition = window.innerWidth * 0.55;
+      setAlignedRight(elPosition > breakpointPosition);
+    }
+  }, []);
+
   return (
-    <div class={cx("dropdown", props.open ? "open" : "", props.class)} data-onclick-identifier = {"leave-open"} onMouseDown={e => {}} onClick={e => {}}>
+    <div
+      ref={dropdownRef}
+      class={cx(
+        "dropdown",
+        props.open ? "open" : "",
+        props.class,
+        alignedRight ? "aligned-right" : ""
+      )}
+      data-onclick-identifier={"leave-open"}
+      onMouseDown={e => {}}
+      onClick={e => {}}
+    >
       <div>{props.children}</div>
       {props.buttons ? (
         <div class="button-row">
@@ -378,6 +423,13 @@ const dropControlsStyles = breakpoint => css`
 
     > a {
       color: #191919;
+    }
+
+    :hover,
+    &.nav-item-selected {
+      :after {
+        width: 100%;
+      }
     }
 
     > svg {

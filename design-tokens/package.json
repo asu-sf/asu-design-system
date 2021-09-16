@@ -1,28 +1,30 @@
 {
-  "_from": "@asu-design-system/design-tokens@^1.1.0",
+  "_from": "@asu-design-system/design-tokens@dev",
   "_id": "@asu-design-system/design-tokens@1.1.5",
   "_inBundle": false,
   "_integrity": "sha512-B7B+QPrlzHlipi6eMaRJCUUov9oPSKnTpBjXfIgl2A0d9LYu0uRmCDGuSQOiy8tdzels5yG+juiL9ZzJYLAbMg==",
   "_location": "/@asu-design-system/design-tokens",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "tag",
     "registry": true,
-    "raw": "@asu-design-system/design-tokens@^1.1.0",
+    "raw": "@asu-design-system/design-tokens@dev",
     "name": "@asu-design-system/design-tokens",
     "escapedName": "@asu-design-system%2fdesign-tokens",
     "scope": "@asu-design-system",
-    "rawSpec": "^1.1.0",
+    "rawSpec": "dev",
     "saveSpec": null,
-    "fetchSpec": "^1.1.0"
+    "fetchSpec": "dev"
   },
   "_requiredBy": [
+    "#USER",
+    "/",
     "/@asu-design-system/components-library"
   ],
   "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fdesign-tokens/-/design-tokens-1.1.5.tgz",
   "_shasum": "b977a9e486960e61f5f424df5a2f90c407c0cdbd",
-  "_spec": "@asu-design-system/design-tokens@^1.1.0",
-  "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package/node_modules/@asu-design-system/components-library",
+  "_spec": "@asu-design-system/design-tokens@dev",
+  "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package",
   "bugs": {
     "url": "https://github.com/asu/asu-unity-stack/issues"
   },

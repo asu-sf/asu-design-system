@@ -3,10 +3,14 @@ import { css, cx } from "@emotion/css";
 import { forwardRef } from "preact/compat";
 
 import { Button } from "../";
-import { hiddenStyle, breakpointForMin } from "../../theme";
+import { focusStyle, hiddenStyle, breakpointForMin } from "../../theme";
 import { Icon } from "../Icons";
 
 const navItemStyles = breakpoint => css`
+  a {
+    ${focusStyle}
+  }
+
   .navlink,
   .navicon,
   .navbutton {
@@ -39,12 +43,17 @@ const navItemStyles = breakpoint => css`
   .navlink {
     > a {
       color: #191919;
+      padding: 1rem 0.5rem;
+    }
+
+    & + .navbutton {
+      margin-top: auto;
+      padding-top: 2rem;
     }
 
     @media (min-width: ${breakpointForMin(breakpoint)}) {
       > a {
         padding: 0.5rem 0;
-        white-space: normal;
 
         :visited {
           color: #191919;
@@ -59,14 +68,16 @@ const navItemStyles = breakpoint => css`
   }
 
   .navbutton {
-    margin-top: auto;
-
+    & + .navbutton {
+      margin-top: 0.5rem;
+    }
     @media (min-width: ${breakpointForMin(breakpoint)}) {
       order: 1;
     }
 
     @media (max-width: ${breakpoint}) {
-      margin-top: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0;
     }
   }
 `;
@@ -88,7 +99,6 @@ const NavLink = forwardRef(({ onFocus, children, selected, ...props }, ref) => {
 
 const NavIcon = forwardRef(
   ({ children, onFocus, type, alt, selected, ...props }, ref) => {
-
     return (
       <li class="navicon">
         <a

@@ -17678,7 +17678,7 @@ div[class="alert alert-block"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem 12px;
+  padding: 2rem 0;
 }
 .banner .banner-icon {
   text-align: left;
@@ -17779,7 +17779,6 @@ div[class="alert alert-block"] {
 
 @media screen and (max-width: 576px) {
   .banner {
-    padding: 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -18419,17 +18418,8 @@ a.text-gold:visited:not(.btn):not(.uds-modal-close-btn) {
             transform: scale(1);
   }
 }
-#calendar .calendar-title h2 {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  background-color: #191919;
-  color: #fafafa;
-  padding: 0 0.5rem;
-}
 #calendar .calendar-grid {
   margin: 1.5rem 0;
-  padding: 0.75rem;
   text-align: left;
   font-weight: 700;
 }
@@ -18584,7 +18574,6 @@ Cards - Table of Contents
 
 .uds-image-text-block-container {
   width: 100%;
-  margin: 0 12px;
   border: 1px solid #d0d0d0;
   background: #ffffff 0% 0% no-repeat padding-box;
   display: -webkit-box;
@@ -18602,7 +18591,6 @@ Cards - Table of Contents
 }
 @media screen and (max-width: 576px) {
   .uds-image-text-block-container {
-    margin: 0 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -18659,7 +18647,6 @@ Cards - Table of Contents
 }
 @media screen and (max-width: 576px) {
   .uds-image-text-block-text-container {
-    padding: 24px;
     max-width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -18705,7 +18692,6 @@ Cards - Table of Contents
 @media (min-width: 992px) {
   .uds-image-overlap {
     max-height: 100%;
-    margin: 0 12px;
     display: grid;
     grid-template-columns: 1.5rem 1fr 20rem 10rem 1.5rem;
     grid-template-rows: 4.5rem 1fr 4.5rem;
@@ -18758,12 +18744,10 @@ Cards - Table of Contents
       -ms-flex-pack: center;
           justify-content: center;
   padding: 3rem;
-  margin: 0 12px;
   width: 100%;
 }
 @media screen and (max-width: 576px) {
   .uds-inset-box-container {
-    margin: 0 2rem;
     padding: 1.5rem;
   }
 }
@@ -19003,12 +18987,6 @@ Cards - Table of Contents
   .card-button {
     margin-top: auto;
     padding: 0 24px 24px 24px;
-  }
-
-  .card-button .btn, .card-button .uds-modal-close-btn {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.75rem;
-    line-height: 1rem;
   }
 
   .card > div:last-child {
@@ -19353,8 +19331,9 @@ Cards - Table of Contents
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-.card-foldable .card-header h4 a.collapsed svg.fa-chevron-up,
-.card-foldable .card-header h5 a.collapsed svg.fa-chevron-up {
+.card-foldable .card-header h4 a.collapsed svg.fa-chevron-up, .card-foldable .card-header h4 a.collapsed i.fa-chevron-up,
+.card-foldable .card-header h5 a.collapsed svg.fa-chevron-up,
+.card-foldable .card-header h5 a.collapsed i.fa-chevron-up {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -20088,7 +20067,6 @@ span.page-link:hover {
   position: relative;
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
-  margin: 0 2rem;
 }
 .uds-tabbed-panels .scroll::-webkit-scrollbar {
   display: none;
@@ -20190,6 +20168,8 @@ span.page-link:hover {
 }
 
 .tab-content {
+  overflow-x: hidden;
+  word-break: break-word;
   padding: 2rem;
   margin-bottom: 2rem;
 }
@@ -20204,15 +20184,6 @@ span.page-link:hover {
   background-position: 60% 50%;
 }
 
-@media (min-width: 1260px) {
-  .uds-tabbed-panels {
-    margin: 0;
-  }
-
-  .tab-content {
-    padding: 2rem 0;
-  }
-}
 /*--------------------------------------------------------------
 # Heroes
 
@@ -20557,11 +20528,6 @@ Sidebar Navigation
     display: none;
   }
 }
-@media (max-width: 991.98px) {
-  .sidebar-toggler {
-    margin: 0 2rem;
-  }
-}
 
 .sidebar {
   border: 1px solid #d0d0d0;
@@ -20608,6 +20574,7 @@ Sidebar Navigation
 .sidebar .nav-link.is-active:after {
   content: "";
   position: relative;
+  top: 0.5rem;
   display: block;
   margin-top: 1rem;
   height: 0.5rem;
@@ -20655,6 +20622,9 @@ Sidebar Navigation
 .sidebar .card-foldable .card-body > .nav-link {
   padding: 0 2.5rem 0 1.5rem;
 }
+.sidebar .card-foldable .card-body > .nav-link:last-child:after {
+  top: 1rem;
+}
 .sidebar .card-foldable .card-body > .nav-link:after {
   margin-top: 0.5rem;
 }
@@ -20674,7 +20644,7 @@ Sidebar Navigation
 @media (max-width: 991.98px) {
   .sidebar {
     border-top: 0;
-    margin: 0 2rem;
+    margin: 0 1.25rem;
   }
 }
 
@@ -20694,14 +20664,6 @@ Footer - Table of Contents
 /*------------------------------------------------------------------
 2. Wrapper Base Colors
 --------------------------------------------------------------------*/
-.wrapper {
-  padding: 0 2rem;
-}
-.wrapper .col-md {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 #wrapper-endorsed-footer,
 #wrapper-footer-columns {
   background: #1e1e1e;
@@ -20737,25 +20699,23 @@ Footer - Table of Contents
   color: #191919;
 }
 
-@media (min-width: 992px) {
-  .wrapper .col {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 /*------------------------------------------------------------------
 3. Endorsed Footer (#endorsed-footer)
 --------------------------------------------------------------------*/
 #endorsed-logo img {
   width: 100%;
   height: auto;
-  padding: 1.5rem 0 1rem 0;
+  /* Transform here scales an image which has embedded padding so that
+  it aligns with the Bootstrap grid. */
+  -webkit-transform: scale(1.13);
+      -ms-transform: scale(1.13);
+          transform: scale(1.13);
+  /* Once transformed, the endorsed logo will have approx 20px of vertical
+  "padding" between the top of the logo and black section border. Adding
+  12px provides an approximate 2rem top/bottom margin. */
+  margin: 12px 0;
 }
 
-#endorsed-footer #social-media {
-  padding-right: 0;
-  padding-left: 0;
-}
 #endorsed-footer #social-media .nav {
   padding-bottom: 1.5rem;
 }
@@ -20766,6 +20726,11 @@ Footer - Table of Contents
   padding-top: 7px;
 }
 
+@media (max-width: 767.98px) {
+  #endorsed-footer #social-media .nav-link:first-child {
+    padding-left: 0;
+  }
+}
 @media (min-width: 768px) {
   #endorsed-logo {
     display: -webkit-box;
@@ -20790,16 +20755,13 @@ Footer - Table of Contents
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  #social-media .nav .nav-item:last-child .nav-link {
+  #social-media .nav .nav-link:last-child {
     padding-right: 0;
   }
 }
 /*------------------------------------------------------------------
 4. Footer Columns (#footer-columns)
 --------------------------------------------------------------------*/
-#footer-columns {
-  padding: 0;
-}
 #footer-columns #info-column .contact-link {
   margin-bottom: 2rem;
 }
@@ -20822,6 +20784,9 @@ Footer - Table of Contents
   background: #1e1e1e;
   color: #ffffff;
   border: 0;
+}
+#footer-columns .flex-footer .card-foldable {
+  margin: 0;
 }
 #footer-columns .flex-footer .card-header {
   border-top: 1px solid #393939;
@@ -20895,6 +20860,10 @@ Footer - Table of Contents
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  margin-right: 0;
+  -webkit-transform: translate(1.5rem, 0);
+      -ms-transform: translate(1.5rem, 0);
+          transform: translate(1.5rem, 0);
 }
 #footer-innovation .footer-innovation-links .img-link img {
   height: 100px;
@@ -20904,15 +20873,7 @@ Footer - Table of Contents
   padding: 0;
 }
 
-@media (max-width: 1259.98px) {
-  #footer-innovation .footer-innovation-links .img-link img {
-    height: 76px;
-  }
-}
 @media (max-width: 991.98px) {
-  #footer-innovation {
-    padding: 0;
-  }
   #footer-innovation .footer-innovation-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -20922,6 +20883,9 @@ Footer - Table of Contents
   }
   #footer-innovation .footer-innovation-links .img-link {
     margin-right: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
   #footer-innovation .footer-innovation-links .img-link img {
     width: 100%;
@@ -20957,9 +20921,6 @@ Footer - Table of Contents
 }
 
 @media (max-width: 991.98px) {
-  #footer-colophon {
-    padding: 0;
-  }
   #footer-colophon .nav {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -21002,6 +20963,11 @@ blockquote:before {
   gap: 1.5rem;
   font-size: 1.25rem;
   font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .uds-blockquote {
+    padding: 2rem;
+  }
 }
 .uds-blockquote svg {
   grid-column: 1;
@@ -21405,6 +21371,15 @@ blockquote:before {
   border-bottom: 1px solid #d0d0d0;
   background-color: #ffffff;
 }
+#wrapper-header-main .container,
+#wrapper-header-main .container-fluid,
+#wrapper-header-main .container-xl,
+#wrapper-header-main .container-lg,
+#wrapper-header-main .container-md,
+#wrapper-header-main .container-sm {
+  padding-left: 12px;
+  padding-right: 12px;
+}
 
 #header-main {
   padding: 0;
@@ -21727,6 +21702,14 @@ blockquote:before {
 #header-main .dropdown-menu div[class^=col-]:last-child {
   margin-bottom: 0;
 }
+#header-main .dropdown-menu .btns-row {
+  position: absolute;
+  bottom: 0;
+}
+#header-main .dropdown-menu .btns-row .col-btn {
+  margin-left: 0 !important;
+  margin-top: 0;
+}
 #header-main .dropdown-menu .col-btn {
   margin-top: 1.5rem;
 }
@@ -21751,10 +21734,6 @@ blockquote:before {
 /*--------------------------------------------------------------
 6. Main Menu, Mobile Only
 --------------------------------------------------------------*/
-#wrapper-header-main .container-lg {
-  padding: 0;
-}
-
 @media (max-width: 370px) {
   #header-main .partner .partners-logos {
     margin: 0.5rem 0 0.5rem 0.5rem;
@@ -21779,6 +21758,10 @@ blockquote:before {
     display: block;
   }
 
+  #header-main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   #header-main .navbar {
     padding: 0;
     -webkit-box-align: start;
@@ -22122,6 +22105,33 @@ blockquote:before {
     margin-top: 110px;
   }
 }
+/*
+We need to easily and consistently align
+the content of full width components with
+the content of the header
+*/
+.uds-full-width .uds-content-align {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 1rem;
+}
+@media (min-width: 768px) {
+  .uds-full-width .uds-content-align {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .uds-full-width .uds-content-align {
+    max-width: 940px;
+  }
+}
+@media (min-width: 1260px) {
+  .uds-full-width .uds-content-align {
+    max-width: 1200px;
+  }
+}
+
 form.uds-form {
   /* Labels */
   /* Helper text */
@@ -22604,7 +22614,6 @@ form.uds-form.uds-form-gray7 .input-group-trailing-icon svg {
   max-width: 1920px;
   padding: 48px 96px;
   width: 100%;
-  margin: 0 12px;
 }
 @media screen and (max-width: 576px) {
   .uds-quote-image-background {
@@ -22612,6 +22621,10 @@ form.uds-form.uds-form-gray7 .input-group-trailing-icon svg {
     padding: 24px;
     width: 100%;
     margin: 0;
+  }
+  .uds-quote-image-background .container {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 .uds-quote-image-background-container {
@@ -22652,11 +22665,19 @@ button.uds-tooltip .fa-stack > * {
 button.uds-tooltip i {
   vertical-align: middle;
 }
-button.uds-tooltip:hover + div[role=tooltip].uds-tooltip-description, button.uds-tooltip:focus + div[role=tooltip].uds-tooltip-description {
+button.uds-tooltip:focus + div[role=tooltip].uds-tooltip-description {
   visibility: visible;
 }
-button.uds-tooltip:hover .fa-circle, button.uds-tooltip:focus .fa-circle {
+button.uds-tooltip:focus .fa-circle {
   color: #00b0f3;
+}
+@media (min-width: 576px) {
+  button.uds-tooltip:hover + div[role=tooltip].uds-tooltip-description {
+    visibility: visible;
+  }
+  button.uds-tooltip:hover .fa-circle {
+    color: #00b0f3;
+  }
 }
 
 button.uds-tooltip-gray-1 .fa-circle {
@@ -22719,7 +22740,7 @@ span.uds-tooltip-visually-hidden {
   background-color: #ffffff;
 }
 
-.uds-tooltip-bg-gray-1 {
+.uds-tooltip-bg-base-gray {
   background-color: #fafafa;
 }
 
@@ -22762,14 +22783,6 @@ span.uds-tooltip-visually-hidden {
 .uds-video-btn-play .svg-inline--fa.fa-w-14 {
   margin-left: 5px;
 }
-.uds-video-container {
-  margin: 48px;
-}
-@media screen and (max-width: 768px) {
-  .uds-video-container {
-    margin: 24px;
-  }
-}
 .uds-video-container video {
   height: auto;
   width: 100%;
@@ -22785,9 +22798,13 @@ span.uds-tooltip-visually-hidden {
 }
 .uds-video-player {
   position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.uds-video-player.youtube-video {
   padding-bottom: 56.25%;
   /* 16:9 */
-  height: 0;
 }
 .uds-video-overlay {
   display: -webkit-box;
@@ -22807,7 +22824,7 @@ span.uds-tooltip-visually-hidden {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0.5rem;
   z-index: 1;
 }
 .uds-video-overlay:hover button.uds-video-btn-play {
@@ -22834,7 +22851,6 @@ span.uds-tooltip-visually-hidden {
   max-width: 1920px;
   padding: 48px 96px;
   width: 100%;
-  margin: 0 12px;
 }
 .uds-card-and-image-right {
   -webkit-box-orient: horizontal;
@@ -22856,6 +22872,10 @@ span.uds-tooltip-visually-hidden {
     padding: 24px;
     width: 100%;
     margin: 0;
+  }
+  .uds-card-and-image .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 .uds-card-and-image-container {
@@ -22887,7 +22907,6 @@ span.uds-tooltip-visually-hidden {
      -moz-column-gap: 1.5rem;
           column-gap: 1.5rem;
   row-gap: 1.5rem;
-  padding: 0 2rem;
 }
 .uds-grid-links a {
   font-size: 1.25rem;
@@ -22931,9 +22950,6 @@ span.uds-tooltip-visually-hidden {
   }
 }
 @media (min-width: 1260px) {
-  .uds-grid-links {
-    padding: 0;
-  }
   .uds-grid-links.four-columns {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -23033,7 +23049,8 @@ canvas {
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
 }
-.uds-anchor-menu h4[aria-expanded=true] svg {
+.uds-anchor-menu h4[aria-expanded=true] svg,
+.uds-anchor-menu h4[aria-expanded=true] i {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -23282,7 +23299,6 @@ canvas {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1200px;
-  margin: 0 12px;
 }
 .uds-card-image-and-content-image-container {
   background-size: cover;
@@ -23301,6 +23317,7 @@ canvas {
   padding: 2rem;
   position: absolute;
   max-width: 50%;
+  color: #ffffff;
 }
 .uds-card-image-and-content-content-container {
   display: -webkit-box;
@@ -23346,9 +23363,6 @@ canvas {
   }
 }
 @media only screen and (max-width: 576px) {
-  .uds-card-image-and-content {
-    margin: 0;
-  }
   .uds-card-image-and-content-image-container {
     height: 16rem;
   }
@@ -23366,7 +23380,6 @@ canvas {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 1400px;
-  margin: 0 12px;
 }
 .uds-card-arrangement > .uds-card-arrangement-content-container {
   display: -webkit-box;
@@ -23470,7 +23483,6 @@ canvas {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 2rem;
   }
   .uds-card-arrangement > .uds-card-arrangement-card-container.auto-arrangement {
     grid-template-columns: 1fr;
@@ -23600,7 +23612,7 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 12px;
+  margin: auto;
 }
 .uds-image-background-with-cta-container {
   -webkit-box-align: baseline;
@@ -23661,6 +23673,9 @@ canvas {
   .uds-image-background-with-cta {
     margin: 0;
   }
+  .uds-image-background-with-cta .container {
+    padding: 0;
+  }
 }
 .uds-table {
   border: 1px solid #e8e8e8;
@@ -23692,12 +23707,29 @@ canvas {
           box-sizing: border-box;
   min-width: 300px;
 }
+@media screen and (max-width: 576px) {
+  .uds-table > table tr :first-child {
+    width: 128px;
+    min-width: 128px;
+    max-width: 128px;
+  }
+}
 .uds-table > table > thead > tr:first-child th {
   background-color: #d0d0d0;
 }
 .uds-table > table tbody tr th,
 .uds-table > table tbody tr td {
   background-color: white;
+}
+.uds-table > table tbody tr th p,
+.uds-table > table tbody tr td p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
 }
 .uds-table > table tbody tr:nth-child(2n) th,
 .uds-table > table tbody tr:nth-child(2n) td {
@@ -23798,12 +23830,6 @@ canvas {
   }
 }
 @media screen and (max-width: 576px) {
-  .uds-table > table tr > *:first-child {
-    width: 128px;
-    min-width: 128px;
-    max-width: 128px;
-  }
-
   .uds-table-fixed-wrapper .scroll-control.previous {
     left: 128px;
   }
@@ -23853,11 +23879,6 @@ Desktop styles
 /*--------------------------------------------------------------
 Mobile Styles
 --------------------------------------------------------------*/
-@media (max-width: 1259.98px) {
-  .uds-person-profile {
-    padding: 0 2rem;
-  }
-}
 @media (max-width: 991.98px) {
   .uds-person-profile {
     max-width: 300px;
@@ -23889,5 +23910,20 @@ Mobile Styles
   .uds-person-profile .person ul.person-contact-info li {
     margin-top: 0.5rem;
     margin-left: 0;
+  }
+}
+/* -----------------------------------------------------
+Container/ row / column padding adjustments for mobile.
+
+Bootstrap doesn't natively provide a way to alter the behavior
+its native grid elements based on a media query. This overrides
+that behavior at screens <= 575px. (The small breakpoint.)
+
+Should be included after @import scss/grid. Registered here for clarity.
+------------------------------------------------------ */
+@media (max-width: 767.98px) {
+  .container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
