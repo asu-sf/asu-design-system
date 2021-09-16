@@ -1,0 +1,43 @@
+name: Salesforce CI
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+    
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          path: repo
+        
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Download package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo "@asu-design-system:registry=https://registry.web.asu.edu/" >> ~/.npmrc
+          echo "//registry.web.asu.edu/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
+          mkdir -p $GITHUB_WORKSPACE/npm_package
+          cd $GITHUB_WORKSPACE/npm_package
+          npm install @asu-design-system/components-library
+          
+      - name: Update files
+        run: |
+          cd $GITHUB_WORKSPACE/repo
+          git config --global user.name "Github Action"
+          rm -rf components-library
+          rm -rf design-tokens
+          mv $GITHUB_WORKSPACE/npm_package/node_modules/\@asu-design-system/components-library .
+          mv $GITHUB_WORKSPACE/npm_package/node_modules/\@asu-design-system/design-tokens .
+          git add .
+          git update-index --refresh 
+          git diff-index --quiet HEAD -- || ( git commit -m "Updating from npm package - $(date)" && git push )
