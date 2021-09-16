@@ -23,15 +23,19 @@ jobs:
           echo "//registry.web.asu.edu/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
           mkdir -p $GITHUB_WORKSPACE/npm_package
           cd $GITHUB_WORKSPACE/npm_package
-          npm install @asu-design-system/components-library
+          npm install @asu-design-system/components-library@dev
+          npm install @asu-design-system/bootstrap4-theme@dev  
+          npm install @asu-design-system/design-tokens@dev
       - name: Update files
         run: |
           cd $GITHUB_WORKSPACE/repo
           git config --global user.name "Github Action"
           rm -rf components-library
+          rm -rf bootstrap4-theme
           rm -rf design-tokens
           mv $GITHUB_WORKSPACE/npm_package/node_modules/\@asu-design-system/components-library .
+          mv $GITHUB_WORKSPACE/npm_package/node_modules/\@asu-design-system/bootstrap4-theme .
           mv $GITHUB_WORKSPACE/npm_package/node_modules/\@asu-design-system/design-tokens .
           git add .
           git update-index --refresh 
-          git diff-index --quiet HEAD -- || ( git commit -m "Updating from npm package - $(date)" && git push )
+          git diff-index --quiet HEAD -- || ( git commit -m "Updating ASU Design System from source - $(date)" && git push )
