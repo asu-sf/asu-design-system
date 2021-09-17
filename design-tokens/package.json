@@ -24,7 +24,7 @@
   "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fdesign-tokens/-/design-tokens-1.1.5.tgz",
   "_shasum": "b977a9e486960e61f5f424df5a2f90c407c0cdbd",
   "_spec": "@asu-design-system/design-tokens@dev",
-  "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package",
+  "_where": "/home/runner/work/asu-design-system/asu-design-system/packages",
   "bugs": {
     "url": "https://github.com/asu/asu-unity-stack/issues"
   },

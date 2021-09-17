@@ -23,7 +23,7 @@
   "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fbootstrap4-theme/-/bootstrap4-theme-6.8.2.tgz",
   "_shasum": "7a2339e0cfc0e99cef89c4e90539c97a984a5c77",
   "_spec": "@asu-design-system/bootstrap4-theme@dev",
-  "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package",
+  "_where": "/home/runner/work/asu-design-system/asu-design-system/packages",
   "bugs": {
     "url": "https://github.com/asu/asu-unity-stack/issues"
   },

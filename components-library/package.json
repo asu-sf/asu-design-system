@@ -23,7 +23,7 @@
   "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fcomponents-library/-/components-library-2.1.13.tgz",
   "_shasum": "6a605d03b404ac73ba7e9e1932a60c597ccaba4c",
   "_spec": "@asu-design-system/components-library@dev",
-  "_where": "/home/runner/work/asu-design-system/asu-design-system/npm_package",
+  "_where": "/home/runner/work/asu-design-system/asu-design-system/packages",
   "author": {
     "name": "Colton Testamarck"
   },
