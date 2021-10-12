@@ -17492,6 +17492,7 @@ select:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 0;
 }
 .alert .alert-icon {
   -webkit-box-flex: 0;
@@ -17812,9 +17813,7 @@ div[class="alert alert-block"] {
 .btn, .uds-modal-close-btn {
   text-decoration: none;
   font-weight: bold;
-}
-.btn + .btn, .uds-modal-close-btn + .btn, .btn + .uds-modal-close-btn, .uds-modal-close-btn + .uds-modal-close-btn {
-  margin-left: 1rem;
+  white-space: nowrap;
 }
 .btn.btn-md, .btn-md.uds-modal-close-btn {
   font-size: 0.875rem;
@@ -18574,6 +18573,7 @@ Cards - Table of Contents
 
 .uds-image-text-block-container {
   width: 100%;
+  max-width: 1920px;
   border: 1px solid #d0d0d0;
   background: #ffffff 0% 0% no-repeat padding-box;
   display: -webkit-box;
@@ -18583,6 +18583,7 @@ Cards - Table of Contents
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .uds-image-text-block-container {
@@ -18682,8 +18683,11 @@ Cards - Table of Contents
 }
 .uds-image-overlap .content-wrapper {
   background-color: #ffffff;
-  padding: 40px;
+  padding: 32px;
   overflow: hidden;
+}
+.uds-image-overlap .content-wrapper h1, .uds-image-overlap .content-wrapper h2, .uds-image-overlap .content-wrapper h3, .uds-image-overlap .content-wrapper h4, .uds-image-overlap .content-wrapper h5 {
+  margin-top: 0;
 }
 
 /*------------------------------------------------------------------
@@ -18709,6 +18713,7 @@ Cards - Table of Contents
     grid-row: 1/span 3;
   }
   .uds-image-overlap .content-wrapper {
+    padding: 40px;
     grid-column: 3/span 2;
     grid-row: 2/span 1;
   }
@@ -18755,8 +18760,25 @@ Cards - Table of Contents
   background-color: #ffffff;
   border: 1px solid #d0d0d0;
   max-width: 1920px;
-  padding: 2rem 8rem;
+  padding: 2rem 4rem;
   width: 50%;
+}
+.uds-inset-box-content .uds-inset-box-buttons {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+.uds-inset-box-content .uds-inset-box-buttons .btn, .uds-inset-box-content .uds-inset-box-buttons .uds-modal-close-btn {
+  display: inline;
+  padding-right: 0;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  line-height: 1.5;
+  margin: 0;
 }
 @media screen and (max-width: 992px) {
   .uds-inset-box-content {
@@ -18889,7 +18911,7 @@ Cards - Table of Contents
 }
 
 .card-header {
-  padding: 32px 32px 16px 32px;
+  padding: 24px 32px 16px 32px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -18906,7 +18928,6 @@ Cards - Table of Contents
 }
 
 .card:not(.card.card-foldable) > div:first-of-type:not(.card-image-content) {
-  padding-top: 32px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -18929,7 +18950,8 @@ Cards - Table of Contents
 
 .card-tags .btn-tag {
   margin-top: 8px;
-  margin-right: 8px;
+  margin-left: 0;
+  margin-right: 1rem;
 }
 
 .card-button {
@@ -18988,7 +19010,26 @@ Cards - Table of Contents
     margin-top: auto;
     padding: 0 24px 24px 24px;
   }
-
+}
+@media (max-width: 991.98px) and (max-width: 991.98px) {
+  .card-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card-buttons .card-button {
+    display: inline;
+    padding-right: 0;
+  }
+  .card-buttons .card-button .btn, .card-buttons .card-button .uds-modal-close-btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 991.98px) {
   .card > div:last-child {
     padding-bottom: 24px;
   }
@@ -19119,12 +19160,12 @@ Cards - Table of Contents
   padding-right: 16px;
 }
 
-.card-story .card-header {
-  padding-top: 24px;
+.card-story:not(.card.card-foldable) > div:first-of-type:not(.card-image-content) {
+  padding-top: 16px;
 }
 
 .card-story > div:first-of-type:not(.card-image-content) {
-  padding: 24px 16px 16px 16px;
+  padding: 16px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -19195,6 +19236,11 @@ Cards - Table of Contents
   padding: 0 2rem 2rem 2rem;
   padding: 0 32px 24px 32px;
   font-size: 14px;
+}
+.card-event-details > * {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
 }
 
 .card-event-details + .card-event-details {
@@ -19297,6 +19343,12 @@ Cards - Table of Contents
   display: -ms-flexbox;
   display: flex;
   margin-left: -0.75rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.card-foldable .card-header.card-header-icon .card-icon svg {
+  margin-top: 2px;
 }
 .card-foldable .card-header:hover {
   background-color: #e8e8e8;
@@ -20272,15 +20324,28 @@ div[class^=uds-hero] .content {
   grid-row: 6;
 }
 div[class^=uds-hero].has-btn-row {
-  grid-template-rows: 1fr repeat(4, auto);
+  grid-template-rows: 1fr auto auto 1.5rem auto;
+}
+div[class^=uds-hero].has-btn-row .hero {
+  grid-row: 1/span 3;
+}
+div[class^=uds-hero].has-btn-row h1 {
+  grid-row: 2;
 }
 div[class^=uds-hero].has-btn-row .btn-row {
-  grid-row: 4;
+  grid-row: 3/span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-div[class^=uds-hero].has-btn-row .btn-row .btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn {
-  margin-bottom: 1rem;
+div[class^=uds-hero].has-btn-row .btn-row .btn:last-child, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn:last-child {
+  margin-top: 1rem;
 }
-div[class^=uds-hero].has-btn-row .btn-row .btn + .btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn + .btn, div[class^=uds-hero].has-btn-row .btn-row .btn + .uds-modal-close-btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn + .uds-modal-close-btn {
+div[class^=uds-hero].has-btn-row .btn-row .btn:last-child + .btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn:last-child + .btn, div[class^=uds-hero].has-btn-row .btn-row .btn:last-child + .uds-modal-close-btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn:last-child + .uds-modal-close-btn {
   margin-left: 0;
 }
 div[class^=uds-hero].has-btn-row .content {
@@ -20306,6 +20371,15 @@ div.uds-hero-lg {
   div[class^=uds-hero] .content.text-white,
 div[class^=uds-hero] .content > .text-white {
     color: #191919 !important;
+  }
+
+  div.uds-hero-sm .hero,
+div.uds-hero-md .hero {
+    max-height: 16rem;
+  }
+
+  div.uds-hero-lg .hero {
+    max-height: 32rem;
   }
 }
 /*--------------------------------------------------------------
@@ -20354,11 +20428,21 @@ div[class^=uds-hero] .btn-row {
   div[class^=uds-hero].has-btn-row {
     grid-template-rows: 1fr repeat(4, auto) 3rem;
   }
+  div[class^=uds-hero].has-btn-row .hero {
+    grid-row: 1/span 6;
+  }
+  div[class^=uds-hero].has-btn-row h1 {
+    grid-row: 2;
+  }
   div[class^=uds-hero].has-btn-row .content {
     grid-row: 4;
   }
   div[class^=uds-hero].has-btn-row .btn-row {
     grid-row: 5;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   div[class^=uds-hero].has-btn-row .btn-row .btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn {
     margin-top: 1.5rem;
@@ -20644,7 +20728,6 @@ Sidebar Navigation
 @media (max-width: 991.98px) {
   .sidebar {
     border-top: 0;
-    margin: 0 1.25rem;
   }
 }
 
@@ -20817,7 +20900,8 @@ Footer - Table of Contents
 
 @media (min-width: 1260px) {
   #footer-columns {
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   #footer-columns h5 {
     margin: 0 0 1.5rem 0;
@@ -20963,6 +21047,7 @@ blockquote:before {
   gap: 1.5rem;
   font-size: 1.25rem;
   font-weight: 700;
+  padding: 2rem;
 }
 @media (max-width: 767.98px) {
   .uds-blockquote {
@@ -20986,6 +21071,20 @@ blockquote:before {
 .uds-blockquote blockquote p:last-of-type:after {
   content: "”";
 }
+.uds-blockquote .citation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.uds-blockquote .citation .citation-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .uds-blockquote .citation cite {
   display: block;
   font-size: 1rem;
@@ -20994,13 +21093,13 @@ blockquote:before {
 .uds-blockquote .citation cite.name {
   font-weight: 700;
 }
-.uds-blockquote .citation cite.name:before {
-  padding-right: 0.5em;
-  content: "—";
-}
 .uds-blockquote .citation cite.description {
   font-weight: 400;
-  padding-left: 1.5rem;
+}
+.uds-blockquote .citation:before {
+  padding-right: 0.5em;
+  margin-top: -5px;
+  content: "—";
 }
 .uds-blockquote.with-image img {
   -o-object-fit: cover;
@@ -21089,6 +21188,19 @@ blockquote:before {
 5. Alt Citation.
 -  Produces a gold bar above the cite elements.
 ------------------------------------------------------------------- */
+.alt-citation .citation,
+.uds-testimonial .citation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .alt-citation .citation:before,
 .uds-testimonial .citation:before {
   content: "";
@@ -21101,11 +21213,29 @@ blockquote:before {
 .alt-citation .citation cite.name:before,
 .uds-testimonial .citation cite.name:before {
   content: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.alt-citation .citation cite.name,
+.uds-testimonial .citation cite.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .alt-citation .citation cite.description,
 .uds-testimonial .citation cite.description {
   font-weight: 400;
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .alt-citation.accent-gold .citation:before,
 .uds-testimonial.accent-gold .citation:before {
@@ -21148,6 +21278,16 @@ blockquote:before {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin: 1rem auto;
+}
+.uds-blockquote.uds-testimonial cite.name,
+.uds-blockquote.uds-testimonial cite.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .uds-blockquote.uds-testimonial.with-image img {
   width: 180px;
@@ -22612,7 +22752,7 @@ form.uds-form.uds-form-gray7 .input-group-trailing-icon svg {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1920px;
-  padding: 48px 96px;
+  padding: 2rem;
   width: 100%;
 }
 @media screen and (max-width: 576px) {
@@ -22853,6 +22993,15 @@ span.uds-tooltip-visually-hidden {
   width: 100%;
 }
 .uds-card-and-image-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.uds-card-and-image-right .card-and-image-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -23298,7 +23447,6 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1200px;
 }
 .uds-card-image-and-content-image-container {
   background-size: cover;
@@ -23310,15 +23458,6 @@ canvas {
   position: relative;
   width: 100%;
 }
-.uds-card-image-and-content-image-container > .uds-card-image-and-content-image-container-headline {
-  left: 0px;
-  bottom: 0px;
-  font: normal normal bold 3rem Arial;
-  padding: 2rem;
-  position: absolute;
-  max-width: 50%;
-  color: #ffffff;
-}
 .uds-card-image-and-content-content-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23327,6 +23466,16 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
+}
+.uds-card-image-and-content-content-container > .uds-card-image-and-content-content-container-headline {
+  left: 0px;
+  top: -175px;
+  font: normal normal bold 3rem Arial;
+  padding: 2rem;
+  position: absolute;
+  max-width: 50%;
+  color: #ffffff;
 }
 .uds-card-image-and-content-content-container .content {
   width: 55%;
@@ -23345,14 +23494,14 @@ canvas {
   }
 }
 @media only screen and (max-width: 768px) {
-  .uds-card-image-and-content-image-container > .uds-card-image-and-content-image-container-headline {
-    max-width: 100%;
-  }
   .uds-card-image-and-content-content-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .uds-card-image-and-content-content-container > .uds-card-image-and-content-content-container-headline {
+    max-width: 100%;
   }
   .uds-card-image-and-content-content-container .content {
     width: 100%;
@@ -23366,7 +23515,7 @@ canvas {
   .uds-card-image-and-content-image-container {
     height: 16rem;
   }
-  .uds-card-image-and-content-image-container > .uds-card-image-and-content-image-container-headline {
+  .uds-card-image-and-content-content-container > .uds-card-image-and-content-content-container-headline {
     font: normal normal bold 2rem Arial;
     padding: 2rem;
   }
@@ -23395,16 +23544,27 @@ canvas {
 }
 .uds-card-arrangement > .uds-card-arrangement-content-container > h2 {
   font: normal normal bold 2.5rem Arial;
+  padding-right: 3rem;
 }
 .uds-card-arrangement > .uds-card-arrangement-content-container > button {
   margin-left: auto;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .uds-card-arrangement > .uds-card-arrangement-content-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .uds-card-arrangement > .uds-card-arrangement-content-container > h2 {
+    padding-right: 0;
+  }
+  .uds-card-arrangement > .uds-card-arrangement-content-container > button {
+    margin-left: unset;
+    margin-right: auto;
   }
 }
 .uds-card-arrangement > .uds-card-arrangement-card-container {
@@ -23625,9 +23785,11 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
+  margin: 0 4rem;
 }
 .uds-image-background-with-cta-container > span {
   color: #fafafa;
@@ -23921,8 +24083,13 @@ that behavior at screens <= 575px. (The small breakpoint.)
 
 Should be included after @import scss/grid. Registered here for clarity.
 ------------------------------------------------------ */
-@media (max-width: 767.98px) {
-  .container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+@media (max-width: 991.98px) {
+  .container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
     padding-left: 2rem;
     padding-right: 2rem;
   }
