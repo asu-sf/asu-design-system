@@ -17815,6 +17815,9 @@ div[class="alert alert-block"] {
   font-weight: bold;
   white-space: nowrap;
 }
+.btn::first-letter, .uds-modal-close-btn::first-letter {
+  text-transform: uppercase;
+}
 .btn.btn-md, .btn-md.uds-modal-close-btn {
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
@@ -20222,7 +20225,8 @@ span.page-link:hover {
 .tab-content {
   overflow-x: hidden;
   word-break: break-word;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -21482,8 +21486,11 @@ blockquote:before {
 4. Scrolled, Desktop
 --------------------------------------------------------------*/
 @media (min-width: 1260px) {
-  #asu-header.scrolled .navbar-container.no-links {
-    margin-top: 2rem;
+  #asu-header.scrolled #header-main .navbar-container.no-links {
+    margin-top: 1.5rem;
+  }
+  #asu-header.scrolled #header-main .navbar-container.no-links .title {
+    margin: 0;
   }
   #asu-header.scrolled .navbar-nav .nav-link,
 #asu-header.scrolled .navbar-nav .dropdown .nav-link {
@@ -21494,7 +21501,7 @@ blockquote:before {
   }
   #asu-header.scrolled #header-main .title {
     padding-bottom: 0;
-    margin: 16px 0;
+    margin: 12px 0;
   }
   #asu-header.scrolled #header-main .title.subdomain-name {
     font-size: 1.5rem;
@@ -21554,7 +21561,7 @@ blockquote:before {
   margin: 1rem 0;
 }
 #header-main .partners-logos {
-  margin: 0.5rem 0 0.5rem 1rem;
+  margin: 0 0 0 2rem;
 }
 #header-main .partners-logos a {
   display: inline-block;
@@ -21580,8 +21587,11 @@ blockquote:before {
   color: #191919;
   border: 0;
   margin-right: 0.5rem;
-  min-height: 48px;
-  min-width: 74px;
+  padding: 0;
+  margin-right: 2rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 #header-main .navbar-toggler:focus {
   outline: 0;
@@ -21590,6 +21600,13 @@ blockquote:before {
   color: #e8e8e8;
   height: 2rem;
   width: 2rem;
+}
+#header-main .navbar-toggler .fa-stack {
+  height: 2rem;
+  width: 2rem;
+}
+#header-main .navbar-toggler.collapsed {
+  border-radius: 0;
 }
 #header-main .navbar-toggler.collapsed .fa-stack {
   display: none;
@@ -21637,6 +21654,7 @@ blockquote:before {
   display: none;
 }
 #header-main .navbar-nav .nav-link {
+  text-transform: capitalize;
   padding: 1rem 2rem 0.5rem 2rem;
   border-top: 1px solid #d0d0d0;
   color: #191919;
@@ -21863,6 +21881,7 @@ blockquote:before {
 #header-main .dropdown-item {
   padding: 1rem 0.5rem;
   white-space: normal;
+  text-transform: capitalize;
 }
 #header-main .dropdown-item:visited {
   color: #191919;
@@ -21875,9 +21894,6 @@ blockquote:before {
 6. Main Menu, Mobile Only
 --------------------------------------------------------------*/
 @media (max-width: 370px) {
-  #header-main .partner .partners-logos {
-    margin: 0.5rem 0 0.5rem 0.5rem;
-  }
   #header-main .partner .partners-logos a:not(:last-child) {
     margin-right: 0.5rem;
     padding-right: 0.5rem;
@@ -22002,6 +22018,26 @@ blockquote:before {
   }
   #header-main .navbar-site-buttons .btn + .btn, #header-main .navbar-site-buttons .uds-modal-close-btn + .btn, #header-main .navbar-site-buttons .btn + .uds-modal-close-btn, #header-main .navbar-site-buttons .uds-modal-close-btn + .uds-modal-close-btn {
     margin-left: 1rem;
+  }
+  #header-main .no-links {
+    margin-top: 2.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header-main .no-links .title.subdomain-name {
+    margin: 0;
+    width: 50%;
+  }
+  #header-main .no-links #menubar {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    width: 50% !important;
   }
   #header-main #menubar {
     overflow: initial;
@@ -22141,6 +22177,7 @@ blockquote:before {
   }
   #header-main .dropdown-col h3 {
     margin-top: 0;
+    text-transform: capitalize;
   }
   #header-main .dropdown-item {
     padding: 0.5rem 0;

@@ -1,8 +1,8 @@
 {
   "_from": "@asu-design-system/bootstrap4-theme@dev",
-  "_id": "@asu-design-system/bootstrap4-theme@7.2.2",
+  "_id": "@asu-design-system/bootstrap4-theme@7.2.3",
   "_inBundle": false,
-  "_integrity": "sha512-IT83Vw8JJgP4Bw6gnj4/eW029IEcIXyEA64zrrWYpkyOGdrEqtGqIShUwKlO8aRfv/KFtAG63Xca4/rFKBindw==",
+  "_integrity": "sha512-k7sTslwCcXb6wyQcVXsk/OHSMpjCaON68hrGDF7fNwhjwq0M3C+tr/nAX4LyK5O31QzzKg94zKh5GmwL3pUEKw==",
   "_location": "/@asu-design-system/bootstrap4-theme",
   "_phantomChildren": {},
   "_requested": {
@@ -20,8 +20,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fbootstrap4-theme/-/bootstrap4-theme-7.2.2.tgz",
-  "_shasum": "499f74190f4f87e6c0a6cd92b84dfcd21c795476",
+  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fbootstrap4-theme/-/bootstrap4-theme-7.2.3.tgz",
+  "_shasum": "5a54489e89bf31b0788c02e166999d6b8f990d26",
   "_spec": "@asu-design-system/bootstrap4-theme@dev",
   "_where": "/home/runner/work/asu-design-system/asu-design-system/packages",
   "bugs": {
@@ -100,5 +100,5 @@
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
     "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration"
   },
-  "version": "7.2.2"
+  "version": "7.2.3"
 }
