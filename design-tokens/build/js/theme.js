@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 28 Jul 2021 18:27:31 GMT
+ * Generated on Mon, 25 Oct 2021 18:21:13 GMT
  */
 
 module.exports = {
@@ -3009,9 +3009,9 @@ module.exports = {
       },
       "disabled": {
         "opacity": {
-          "value": "50%",
+          "value": "0.5",
           "original": {
-            "value": "50%"
+            "value": "0.5"
           },
           "name": "ComponentButtonDisabledOpacity",
           "attributes": {},
@@ -3118,9 +3118,9 @@ module.exports = {
           ]
         },
         "opacity": {
-          "value": "100%",
+          "value": "1",
           "original": {
-            "value": "100%"
+            "value": "1"
           },
           "name": "ComponentButtonCloseOpacity",
           "attributes": {},
@@ -3178,9 +3178,9 @@ module.exports = {
         },
         "disabled": {
           "opacity": {
-            "value": "100%",
+            "value": "1",
             "original": {
-              "value": "100%"
+              "value": "1"
             },
             "name": "ComponentButtonCloseDisabledOpacity",
             "attributes": {},
@@ -3293,9 +3293,9 @@ module.exports = {
               ]
             },
             "opacity": {
-              "value": "25%",
+              "value": "0.25",
               "original": {
-                "value": "25%"
+                "value": "0.25"
               },
               "name": "ComponentButtonCarouselPositionInactiveOpacity",
               "attributes": {},
@@ -3355,9 +3355,9 @@ module.exports = {
         "slider": {
           "disabled": {
             "opacity": {
-              "value": "50%",
+              "value": "0.5",
               "original": {
-                "value": "50%"
+                "value": "0.5"
               },
               "name": "ComponentButtonCarouselSliderDisabledOpacity",
               "attributes": {},
@@ -7279,9 +7279,9 @@ module.exports = {
       },
       "disabled": {
         "opacity": {
-          "value": "50%",
+          "value": "0.5",
           "original": {
-            "value": "50%"
+            "value": "0.5"
           },
           "name": "ComponentPagerDisabledOpacity",
           "attributes": {},
@@ -7632,9 +7632,9 @@ module.exports = {
       },
       "disabled": {
         "opacity": {
-          "value": "50%",
+          "value": "0.5",
           "original": {
-            "value": "50%"
+            "value": "0.5"
           },
           "name": "ComponentTabDisabledOpacity",
           "attributes": {},

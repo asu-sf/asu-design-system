@@ -1,8 +1,8 @@
 {
   "_from": "@asu-design-system/design-tokens@dev",
-  "_id": "@asu-design-system/design-tokens@1.1.5",
+  "_id": "@asu-design-system/design-tokens@1.1.6",
   "_inBundle": false,
-  "_integrity": "sha512-B7B+QPrlzHlipi6eMaRJCUUov9oPSKnTpBjXfIgl2A0d9LYu0uRmCDGuSQOiy8tdzels5yG+juiL9ZzJYLAbMg==",
+  "_integrity": "sha512-OQIkNo1iTjFlEjCWKQkmSiXsHretaz/snQm72GnrD2hXKxpmpTWuHEMEcDZ+6KYLmmGwIBA9pRuMUkIdjOtS0A==",
   "_location": "/@asu-design-system/design-tokens",
   "_phantomChildren": {},
   "_requested": {
@@ -21,8 +21,8 @@
     "/",
     "/@asu-design-system/components-library"
   ],
-  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fdesign-tokens/-/design-tokens-1.1.5.tgz",
-  "_shasum": "b977a9e486960e61f5f424df5a2f90c407c0cdbd",
+  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fdesign-tokens/-/design-tokens-1.1.6.tgz",
+  "_shasum": "0dd0ffeb1cd06acbece0b67a4731b2eb1c7c8914",
   "_spec": "@asu-design-system/design-tokens@dev",
   "_where": "/home/runner/work/asu-design-system/asu-design-system/packages",
   "bugs": {
@@ -55,5 +55,5 @@
     "prepublishOnly": "yarn run build",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "1.1.5"
+  "version": "1.1.6"
 }

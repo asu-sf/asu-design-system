@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 28 Jul 2021 18:27:31 GMT
+ * Generated on Mon, 25 Oct 2021 18:21:13 GMT
  */
 
 export const AssetFontIconName = "FontAwesome";
@@ -170,26 +170,26 @@ export const ComponentButtonPaddingXSmall = ".75rem"; // Magic number: 12px not 
 export const ComponentButtonPaddingYSmall = "0.25rem";
 export const ComponentButtonTextAlign = "center";
 export const ComponentButtonTransition = ".03s ease-in-out";
-export const ComponentButtonDisabledOpacity = "50%";
+export const ComponentButtonDisabledOpacity = "0.5";
 export const ComponentButtonBadgeBackgroundColor = "#bfbfbf";
 export const ComponentButtonBadgeBorderRadius = "400rem";
 export const ComponentButtonBadgeFontWeight = "normal";
 export const ComponentButtonBadgeHeight = "1.375rem"; // Magic number: 22px not a multiple of 8
 export const ComponentButtonCloseHeight = "2rem";
-export const ComponentButtonCloseOpacity = "100%";
+export const ComponentButtonCloseOpacity = "1";
 export const ComponentButtonCloseWidth = "2rem";
 export const ComponentButtonClosePaddingTop = "0";
 export const ComponentButtonClosePaddingBottom = "0.125rem";
-export const ComponentButtonCloseDisabledOpacity = "100%";
+export const ComponentButtonCloseDisabledOpacity = "1";
 export const ComponentButtonCloseWhiteBackgroundColor = "#ffffff";
 export const ComponentButtonCloseGrayBackgroundColor = "#bfbfbf";
 export const ComponentButtonCarouselPositionHeight = "1rem";
 export const ComponentButtonCarouselPositionWidth = "1rem";
 export const ComponentButtonCarouselPositionInactiveBackgroundColor = "#bfbfbf";
-export const ComponentButtonCarouselPositionInactiveOpacity = "25%";
+export const ComponentButtonCarouselPositionInactiveOpacity = "0.25";
 export const ComponentButtonCarouselPositionBlackBackgroundColor = "#191919";
 export const ComponentButtonCarouselPositionWhiteBackgroundColor = "#ffffff";
-export const ComponentButtonCarouselSliderDisabledOpacity = "50%";
+export const ComponentButtonCarouselSliderDisabledOpacity = "0.5";
 export const ComponentButtonCarouselSliderLightBackgroundColor = "#bfbfbf";
 export const ComponentButtonCarouselSliderWhiteBackgroundColor = "#ffffff";
 export const ComponentButtonDefaultFontSize = "1rem";
@@ -416,7 +416,7 @@ export const ComponentPagerHoverTextDecoration = "none";
 export const ComponentPagerHoverColor = "#ffffff";
 export const ComponentPagerActiveBackgroundColor = "#8c1d40";
 export const ComponentPagerActiveColor = "#ffffff";
-export const ComponentPagerDisabledOpacity = "50%";
+export const ComponentPagerDisabledOpacity = "0.5";
 export const ComponentPagerIconHeight = "1rem";
 export const ComponentPagerIconWidth = "1rem";
 export const ComponentPagerIconMargin = "0.25rem";
@@ -439,4 +439,4 @@ export const ComponentTabContainerBorderColor = "#747474";
 export const ComponentTabContainerBorderWidthPx = "1px";
 export const ComponentTabActiveBorderBottom = "8px solid #8c1d40";
 export const ComponentTabActiveColor = "#8c1d40";
-export const ComponentTabDisabledOpacity = "50%";
+export const ComponentTabDisabledOpacity = "0.5";
