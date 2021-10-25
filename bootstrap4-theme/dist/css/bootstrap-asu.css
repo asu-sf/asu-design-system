@@ -17818,6 +17818,10 @@ div[class="alert alert-block"] {
 .btn::first-letter, .uds-modal-close-btn::first-letter {
   text-transform: uppercase;
 }
+.btn.btn-primary, .btn-primary.uds-modal-close-btn {
+  color: #ffffff;
+  background: #8c1d40;
+}
 .btn.btn-md, .btn-md.uds-modal-close-btn {
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
@@ -18587,6 +18591,12 @@ Cards - Table of Contents
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0 auto;
+}
+.uds-image-text-block-container-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 @media (min-width: 768px) {
   .uds-image-text-block-container {
