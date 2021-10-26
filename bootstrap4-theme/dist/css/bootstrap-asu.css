@@ -3069,7 +3069,7 @@ textarea.form-control {
           box-shadow: 0 0 0 0.2rem rgba(140, 29, 64, 0.25);
 }
 .btn.disabled, .disabled.uds-modal-close-btn, .btn:disabled, .uds-modal-close-btn:disabled {
-  opacity: 50%;
+  opacity: 0.5;
 }
 .btn:not(:disabled):not(.disabled), .uds-modal-close-btn:not(:disabled):not(.disabled) {
   cursor: pointer;
@@ -17514,11 +17514,11 @@ select:focus {
           flex: 1;
 }
 .alert .alert-close .close {
-  opacity: 100%;
+  opacity: 1;
   font-size: 1rem;
 }
 .alert .alert-close .close:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .alert-warning {
@@ -17726,11 +17726,11 @@ div[class="alert alert-block"] {
   margin-right: -1rem;
 }
 .banner .banner-close .close {
-  opacity: 100%;
+  opacity: 1;
   font-size: 1rem;
 }
 .banner .banner-close .close:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .banner-green {
@@ -17814,6 +17814,9 @@ div[class="alert alert-block"] {
   text-decoration: none;
   font-weight: bold;
   white-space: nowrap;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
 }
 .btn::first-letter, .uds-modal-close-btn::first-letter {
   text-transform: uppercase;
@@ -20062,7 +20065,7 @@ span.page-link:hover {
 
 .disabled .page-link-icon:before,
 .disabled .page-link-icon:after {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .pagination.uds-bg-gray1 {
@@ -21663,6 +21666,10 @@ blockquote:before {
 #header-main .title .unit-name {
   display: none;
 }
+#header-main .navbar-nav {
+  max-height: calc(100vh - 270px);
+  overflow-y: auto;
+}
 #header-main .navbar-nav .nav-link {
   text-transform: capitalize;
   padding: 1rem 2rem 0.5rem 2rem;
@@ -21719,6 +21726,7 @@ blockquote:before {
 #header-main #menubar {
   overflow-y: scroll;
   overflow-x: hidden;
+  min-height: calc(100vh - 110px);
 }
 #header-main #menubar.collapsing {
   height: unset !important;
@@ -21728,6 +21736,16 @@ blockquote:before {
   bottom: 0;
   right: 0;
   width: 100%;
+}
+#header-main #menubar.collapsing .navbar-mobile-footer.pinned:before, #header-main #menubar.show .navbar-mobile-footer.pinned:before {
+  content: "";
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: -50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(232, 232, 232, 0)), to(#e8e8e8));
+  background: -o-linear-gradient(top, rgba(232, 232, 232, 0) 0%, #e8e8e8 100%);
+  background: linear-gradient(180deg, rgba(232, 232, 232, 0) 0%, #e8e8e8 100%);
 }
 #header-main .navbar-mobile-footer {
   background-color: #e8e8e8;
@@ -22051,8 +22069,11 @@ blockquote:before {
   }
   #header-main #menubar {
     overflow: initial;
+    min-height: auto;
   }
   #header-main .navbar-nav {
+    overflow: unset;
+    max-height: unset;
     line-height: 1.5rem;
   }
   #header-main .navbar-nav > .nav-link {
@@ -22892,7 +22913,7 @@ div[role=tooltip].uds-tooltip-description {
   background: #191919 0% 0% no-repeat padding-box;
   color: #fafafa;
   font: normal normal normal 1rem Arial;
-  line-height: 2rem;
+  line-height: 1.5rem;
   margin: 0px 5px;
   max-width: 353px;
   min-width: 300px;
@@ -22910,6 +22931,11 @@ div[role=tooltip].uds-tooltip-description > span.uds-tooltip-heading {
   letter-spacing: 0px;
   margin-bottom: 1rem;
   text-align: left;
+}
+@media (max-width: 390px) {
+  div[role=tooltip].uds-tooltip-description {
+    min-width: 230px;
+  }
 }
 
 span.uds-tooltip-visually-hidden {
@@ -22954,12 +22980,15 @@ span.uds-tooltip-visually-hidden {
 .uds-video-with-caption figure figcaption {
   color: #747474;
   font-size: 0.75rem;
-  margin: 1rem;
+  margin: 0.5rem 1rem 1rem 1rem;
 }
 .uds-video-btn-play {
   background-color: white !important;
   z-index: 2;
   opacity: 0.7;
+  width: 104px !important;
+  height: 104px !important;
+  font-size: 2.5rem !important;
 }
 .uds-video-btn-play:hover {
   opacity: 1;
@@ -22969,6 +22998,13 @@ span.uds-tooltip-visually-hidden {
 }
 .uds-video-btn-play .svg-inline--fa.fa-w-14 {
   margin-left: 5px;
+}
+@media (max-width: 576px) {
+  .uds-video-btn-play {
+    width: 64px !important;
+    height: 64px !important;
+    font-size: 2rem !important;
+  }
 }
 .uds-video-container video {
   height: auto;
@@ -24124,6 +24160,85 @@ Mobile Styles
     margin-left: 0;
   }
 }
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+.parallax-container img {
+  position: absolute;
+  width: 100%;
+}
+.parallax-container .parallax-container-content {
+  width: 600px;
+  position: absolute;
+  top: 150px;
+  background-color: white;
+  padding: 3rem;
+}
+.parallax-container .parallax-container-content h2 {
+  margin: 0;
+}
+.parallax-container .parallax-container-content p {
+  margin: 2rem 0 1.5rem 0;
+}
+@media screen and (max-width: 768px) {
+  .parallax-container .parallax-container-content {
+    padding: 1rem;
+    width: 450px;
+  }
+  .parallax-container .parallax-container-content p {
+    margin: 1rem 0 0.5rem 0;
+  }
+}
+.parallax-container .parallax-container-content .btn-maroon {
+  margin-right: 1rem;
+}
+
+.carve-your-path {
+  height: 700px;
+}
+.carve-your-path .parallax-container-content {
+  height: 400px;
+  left: 75px;
+}
+@media screen and (max-width: 768px) {
+  .carve-your-path .parallax-container-content {
+    left: 25px;
+    height: 450px;
+  }
+}
+.carve-your-path .parallax-container-content .btn-gold {
+  margin-top: 1rem;
+}
+.carve-your-path .parallax-container-content .btn-maroon {
+  display: block;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .carve-your-path .parallax-container-content .btn-maroon {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 0;
+  }
+}
+
+.asu-for-you {
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://ux-annual-report.ws.asu.edu/sites/all/libraries/Prototype/images/asuForYouBG.png");
+}
+.asu-for-you .parallax-container-content {
+  height: 500px;
+  right: 75px;
+}
+@media screen and (max-width: 768px) {
+  .asu-for-you .parallax-container-content {
+    right: 25px;
+    height: 450px;
+  }
+}
+
 /* -----------------------------------------------------
 Container/ row / column padding adjustments for mobile.
 
