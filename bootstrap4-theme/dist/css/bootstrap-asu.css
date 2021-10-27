@@ -20169,6 +20169,7 @@ span.page-link:hover {
   font-weight: bold;
   font-size: 24px;
   margin: 0.2em 0.2em 0 0.2em;
+  text-transform: capitalize;
 }
 .uds-tabbed-panels .nav-tabs .nav-link.active {
   background-color: transparent;
@@ -20197,16 +20198,20 @@ span.page-link:hover {
 }
 
 .scroll-control-prev {
+  width: 80px;
   position: absolute;
   height: 100%;
   top: 0;
-  background: rgba(0, 0, 0, 0);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(25, 25, 25, 0.25)), to(rgba(25, 25, 25, 0)));
+  background: -o-linear-gradient(left, rgba(25, 25, 25, 0.25) 0%, rgba(25, 25, 25, 0) 100%);
+  background: linear-gradient(90deg, rgba(25, 25, 25, 0.25) 0%, rgba(25, 25, 25, 0) 100%);
   left: 0;
 }
 .scroll-control-prev span.carousel-control-prev-icon {
   margin: 0 42px 0 12px;
 }
 .scroll-control-next {
+  width: 80px;
   position: absolute;
   height: 100%;
   top: 0;
@@ -20222,17 +20227,22 @@ span.page-link:hover {
   background-size: 60% 60%;
   display: block;
   opacity: 0;
-  padding: 12px 12px;
-  margin: 0 8px;
+  padding: 12px;
   position: relative;
   top: 50%;
+  left: 0;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
   background-color: #fafafa;
   border: solid 1px #d0d0d0;
-  border-radius: 200px;
+  border-radius: 100%;
   color: #000;
+}
+@media screen and (max-width: 768px) {
+  .scroll-control-prev, .scroll-control-next {
+    width: 48px;
+  }
 }
 
 .tab-content {
@@ -20288,7 +20298,7 @@ div[class^=uds-hero] .btn-row {
 }
 div[class^=uds-hero] .hero {
   grid-column: 1/span 3;
-  grid-row: 1/span 4;
+  grid-row: 1/span 5;
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
@@ -20328,13 +20338,14 @@ div[class^=uds-hero] [role=doc-subtitle] span {
 div[class^=uds-hero] h1 {
   grid-row: 3;
   margin: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 div[class^=uds-hero] h1 span {
   margin-left: 0.15em;
 }
 div[class^=uds-hero] a.btn, div[class^=uds-hero] a.uds-modal-close-btn {
-  grid-row: 4/span 2;
+  grid-row: 4;
+  margin-bottom: 0.5rem;
 }
 div[class^=uds-hero] .content {
   margin-top: 1.5rem;
@@ -20344,13 +20355,13 @@ div[class^=uds-hero].has-btn-row {
   grid-template-rows: 1fr auto auto 1.5rem auto;
 }
 div[class^=uds-hero].has-btn-row .hero {
-  grid-row: 1/span 3;
+  grid-row: 1/span 4;
 }
 div[class^=uds-hero].has-btn-row h1 {
   grid-row: 2;
 }
 div[class^=uds-hero].has-btn-row .btn-row {
-  grid-row: 3/span 2;
+  grid-row: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20360,7 +20371,7 @@ div[class^=uds-hero].has-btn-row .btn-row {
           flex-direction: column;
 }
 div[class^=uds-hero].has-btn-row .btn-row .btn:last-child, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn:last-child {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 div[class^=uds-hero].has-btn-row .btn-row .btn:last-child + .btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn:last-child + .btn, div[class^=uds-hero].has-btn-row .btn-row .btn:last-child + .uds-modal-close-btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn:last-child + .uds-modal-close-btn {
   margin-left: 0;
@@ -24117,7 +24128,17 @@ Desktop styles
   margin-left: 1.5rem;
 }
 .uds-person-profile .person ul.person-contact-info {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+.uds-person-profile .person ul.person-contact-info .person-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
 }
 .uds-person-profile .person ul.person-social-medias a {
   color: #191919;
