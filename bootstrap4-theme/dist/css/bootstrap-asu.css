@@ -20278,7 +20278,7 @@ span.page-link:hover {
 --------------------------------------------------------------*/
 div[class^=uds-hero] {
   display: grid;
-  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-columns: 2rem 1fr 2rem;
   grid-template-rows: 1fr auto auto auto 1.5rem auto;
   gap: 0px 0px;
   max-width: 1920px;
