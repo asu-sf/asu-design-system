@@ -17853,7 +17853,7 @@ div[class="alert alert-block"] {
 }
 .btn.btn-circle, .btn-circle.uds-modal-close-btn {
   padding: 0.25rem 0.25rem;
-  width: 2rem;
+  width: 2rem !important;
   height: 2rem;
   border: solid 1px #d0d0d0;
 }
@@ -17870,12 +17870,12 @@ div[class="alert alert-block"] {
   color: #191919;
 }
 .btn.btn-circle.btn-circle-large, .btn-circle.btn-circle-large.uds-modal-close-btn {
-  width: 4rem;
+  width: 4rem !important;
   height: 4rem;
   font-size: 1.5rem;
 }
 .btn.btn-circle.btn-circle-x-large, .btn-circle.btn-circle-x-large.uds-modal-close-btn {
-  width: 6.5rem;
+  width: 6.5rem !important;
   height: 6.5rem;
   font-size: 3rem;
 }
@@ -20370,6 +20370,9 @@ div[class^=uds-hero].has-btn-row .btn-row {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+div[class^=uds-hero].has-btn-row .btn-row .btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn {
+  white-space: normal;
+}
 div[class^=uds-hero].has-btn-row .btn-row .btn:last-child, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn:last-child {
   margin-top: 0.5rem;
 }
@@ -20428,6 +20431,11 @@ div[class^=uds-hero] .btn-row {
     max-width: 700px;
     z-index: 30;
   }
+  div[class^=uds-hero] .btn-row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   div[class^=uds-hero] .hero {
     grid-column: 1/span 3;
     grid-row: 1/span 6;
@@ -20475,6 +20483,9 @@ div[class^=uds-hero] .btn-row {
   div[class^=uds-hero].has-btn-row .btn-row .btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn {
     margin-top: 1.5rem;
     margin-bottom: 0;
+  }
+  div[class^=uds-hero].has-btn-row .btn-row .btn:last-child, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn:last-child {
+    margin-top: 1.5rem;
   }
   div[class^=uds-hero].has-btn-row .btn-row .btn + .btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn + .btn, div[class^=uds-hero].has-btn-row .btn-row .btn + .uds-modal-close-btn, div[class^=uds-hero].has-btn-row .btn-row .uds-modal-close-btn + .uds-modal-close-btn {
     margin-left: 1rem;
