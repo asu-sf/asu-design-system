@@ -24026,6 +24026,13 @@ canvas {
 .uds-table-fixed {
   overflow-x: scroll;
   border: 1px solid #e8e8e8;
+  scroll-behavior: smooth;
+}
+.uds-table-fixed-wrapper .scroll-control {
+  display: none;
+}
+.uds-table-fixed-wrapper:hover .scroll-control {
+  display: block;
 }
 .uds-table-fixed-wrapper {
   position: relative;
@@ -24037,9 +24044,6 @@ canvas {
   pointer-events: none;
   top: 0;
   z-index: 100;
-}
-.uds-table-fixed-wrapper .scroll-control.show {
-  display: block;
 }
 .uds-table-fixed-wrapper .scroll-control.previous {
   background: -webkit-gradient(linear, left top, right top, from(rgba(25, 25, 25, 0.25)), to(rgba(25, 25, 25, 0)));
@@ -24102,6 +24106,9 @@ canvas {
 @media screen and (max-width: 576px) {
   .uds-table-fixed-wrapper .scroll-control.previous {
     left: 128px;
+  }
+  .uds-table-fixed > table tr > *:first-child {
+    min-width: auto;
   }
 }
 /*--------------------------------------------------------------
