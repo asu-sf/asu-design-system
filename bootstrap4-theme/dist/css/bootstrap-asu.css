@@ -20670,11 +20670,12 @@ Sidebar Navigation
   border-bottom: 0;
 }
 .sidebar .nav-link {
-  padding: 1rem 0.5rem;
+  position: relative;
+  padding: 0 0.5rem;
   color: #191919;
   font-size: 1rem;
   line-height: 1.5rem;
-  letter-spacing: -0.037rem;
+  letter-spacing: 0;
 }
 .sidebar .nav-link:not(.is-active) {
   display: -webkit-box;
@@ -20692,18 +20693,20 @@ Sidebar Navigation
 }
 .sidebar .nav-link.is-active {
   text-decoration: none;
-  padding-bottom: 0;
 }
 .sidebar .nav-link.is-active:after {
   content: "";
-  position: relative;
-  top: 0.5rem;
+  position: absolute;
   display: block;
-  margin-top: 1rem;
   height: 0.5rem;
   width: 100%;
   background-color: #ffc627;
   text-decoration: none;
+  bottom: -0.7rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .sidebar .nav-link[aria-expanded=true] svg {
   -webkit-transform: rotate(180deg);
@@ -20711,9 +20714,20 @@ Sidebar Navigation
           transform: rotate(180deg);
 }
 .sidebar > .nav-link-container {
-  padding: 0.5rem;
+  padding: 0 0.5rem;
   overflow: hidden;
   color: #191919;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .sidebar > .nav-link-container:not(:first-child) {
   border-top: 1px solid #d0d0d0;
@@ -20744,12 +20758,16 @@ Sidebar Navigation
 }
 .sidebar .card-foldable .card-body > .nav-link {
   padding: 0 2.5rem 0 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.sidebar .card-foldable .card-body > .nav-link:last-child:after {
-  top: 1rem;
-}
-.sidebar .card-foldable .card-body > .nav-link:after {
-  margin-top: 0.5rem;
+.sidebar .card-foldable .card-body > .nav-link.is-active:after {
+  bottom: -1rem;
+  width: calc(100% - 4rem);
+  -webkit-transform: translateX(calc(-50% - 0.5rem));
+      -ms-transform: translateX(calc(-50% - 0.5rem));
+          transform: translateX(calc(-50% - 0.5rem));
 }
 .sidebar .card-foldable .card-body > .nav-link + .nav-link {
   padding-top: 1rem;
