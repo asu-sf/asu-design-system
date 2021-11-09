@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 25 Oct 2021 18:21:13 GMT
+ * Generated on Mon, 08 Nov 2021 20:19:45 GMT
  */
 
 module.exports = {
@@ -5937,11 +5937,27 @@ module.exports = {
       }
     },
     "list": {
+      "max-width": {
+        "value": "43.75rem",
+        "original": {
+          "value": "43.75ch"
+        },
+        "name": "ComponentListMaxWidth",
+        "attributes": {
+          "category": "size",
+          "type": "dimension"
+        },
+        "path": [
+          "component",
+          "list",
+          "max-width"
+        ]
+      },
       "spacing": {
         "padding": {
-          "value": "3rem 5rem 3rem 2rem",
+          "value": "0 0 3rem 2rem",
           "original": {
-            "value": "{size.spacing.6.value} {size.spacing.10.value} {size.spacing.6.value} {size.spacing.4.value}"
+            "value": "0 0 {size.spacing.6.value} {size.spacing.4.value}"
           },
           "name": "ComponentListSpacingPadding",
           "attributes": {
@@ -5970,24 +5986,6 @@ module.exports = {
           ]
         },
         "li": {
-          "max-width": {
-            "value": "75rem",
-            "original": {
-              "value": "75ch"
-            },
-            "name": "ComponentListSpacingLiMaxWidth",
-            "attributes": {
-              "category": "size",
-              "type": "dimension"
-            },
-            "path": [
-              "component",
-              "list",
-              "spacing",
-              "li",
-              "max-width"
-            ]
-          },
           "margin-bottom": {
             "value": "1rem",
             "original": {

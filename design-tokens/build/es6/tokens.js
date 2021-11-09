@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 25 Oct 2021 18:21:13 GMT
+ * Generated on Mon, 08 Nov 2021 20:19:45 GMT
  */
 
 export const AssetFontIconName = "FontAwesome";
@@ -335,9 +335,9 @@ export const ComponentHeroesMediaUdsHeroUdsHeroSmPaddingLeft = "1.5rem";
 export const ComponentHeroesMediaUdsHeroUdsHeroSmPaddingBottom = "2rem";
 export const ComponentHeroesMediaUdsHeroUdsHeroLgBreakpoint = "1400px"; // 1400px
 export const ComponentHeroesMediaUdsHeroUdsHeroLgHeight = "32rem"; // Calculates to 512px
-export const ComponentListSpacingPadding = "3rem 5rem 3rem 2rem";
+export const ComponentListMaxWidth = "43.75rem";
+export const ComponentListSpacingPadding = "0 0 3rem 2rem";
 export const ComponentListSpacingListStyle = "none";
-export const ComponentListSpacingLiMaxWidth = "75rem";
 export const ComponentListSpacingLiMarginBottom = "1rem";
 export const ComponentListSpacingLiLastOfTypeMarginBottom = "0rem";
 export const ComponentListUlStylesContentBullet = "\\2022 ";
