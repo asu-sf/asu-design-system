@@ -1,8 +1,8 @@
 {
   "_from": "@asu-design-system/components-library@dev",
-  "_id": "@asu-design-system/components-library@2.2.7",
+  "_id": "@asu-design-system/components-library@2.2.9",
   "_inBundle": false,
-  "_integrity": "sha512-CWXOkmo5AK8/YNyCq65CWvWr09r+TnWI+d3gEASZGPJtDdpg00zmENriCHuJ3+ZNeKtdRqj8lOcGL8+VOeHQzQ==",
+  "_integrity": "sha512-y98CVpZJCmS5PWcRRRFi6/VaP7EPGsrZiiuxrV/+k0WCk1j4ixSrhGdd9JLEoFkagqDUbPNhyevYeGeLfjPpwQ==",
   "_location": "/@asu-design-system/components-library",
   "_phantomChildren": {},
   "_requested": {
@@ -20,8 +20,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fcomponents-library/-/components-library-2.2.7.tgz",
-  "_shasum": "fd325c4881e628d85354ef0141cb91167cdfa5bc",
+  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fcomponents-library/-/components-library-2.2.9.tgz",
+  "_shasum": "5561d77ee2ce55b52a22c966c2c6a00ca5a82594",
   "_spec": "@asu-design-system/components-library@dev",
   "_where": "/home/runner/work/asu-design-system/asu-design-system/packages",
   "author": {
@@ -76,5 +76,5 @@
     "storybook": "start-storybook -p 8089 -s ./dist",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "2.2.7"
+  "version": "2.2.9"
 }
