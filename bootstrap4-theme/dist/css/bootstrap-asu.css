@@ -21612,7 +21612,6 @@ blockquote:before {
   display: none;
 }
 #header-main .navbar-nav .nav-link {
-  text-transform: capitalize;
   padding: 1rem 2rem 0.5rem 2rem;
   border-top: 1px solid #d0d0d0;
   color: #191919;
@@ -21855,7 +21854,6 @@ blockquote:before {
 #header-main .dropdown-item {
   padding: 1rem 0.5rem;
   white-space: normal;
-  text-transform: capitalize;
 }
 #header-main .dropdown-item:visited {
   color: #191919;
@@ -22169,7 +22167,6 @@ blockquote:before {
   }
   #header-main .dropdown-col h3 {
     margin-top: 0;
-    text-transform: capitalize;
   }
   #header-main .dropdown-item {
     padding: 0.5rem 0;
