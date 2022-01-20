@@ -24035,25 +24035,69 @@ canvas {
 Desktop styles
 --------------------------------------------------------------*/
 .uds-person-profile {
+  --max-width: 800px;
+  --pic-size: 180px;
+  --person-profession-bottom-margin: 16px;
+  --person-name-size: 24px;
+  --name-top-margin: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 800px;
+  max-width: var(--max-width);
 }
-.uds-person-profile .profile-img {
-  width: 180px;
-  height: 180px;
+.uds-person-profile.small-profile {
+  --pic-size: 120px;
+}
+.uds-person-profile.micro-profile {
+  --max-width: 384px;
+  --pic-size: 78px;
+  --person-profession-bottom-margin: 8px;
+  --person-name-size: 20px;
+  --name-top-margin: 0;
+}
+.uds-person-profile.micro-profile .person-profession h4:not(:first-child) {
+  display: none;
+}
+.uds-person-profile.fill {
+  background-color: #fafafa;
+  border: 1px solid #d0d0d0;
+  padding: 32px;
+}
+.uds-person-profile .profile-img-container {
+  width: var(--pic-size);
+  height: 100%;
+}
+.uds-person-profile .profile-img-container .profile-img-placeholder {
+  background-size: 100%;
+  background-size: cover;
+  width: var(--pic-size);
+  height: var(--pic-size);
+}
+.uds-person-profile .profile-img-container .profile-img-placeholder .profile-img {
+  width: var(--pic-size);
+  height: var(--pic-size);
   border-radius: 100%;
 }
 .uds-person-profile .person {
   margin-left: 1.5rem;
 }
 .uds-person-profile .person-name {
-  margin: 0.5rem 0;
+  line-height: 1;
+  font-size: var(--person-name-size);
+  margin-top: var(--name-top-margin);
+  margin-bottom: 0.5rem;
 }
 .uds-person-profile .person-profession {
-  margin: 0 0 1rem 0;
+  margin: 0;
+  line-height: 1;
+  margin-bottom: var(--person-profession-bottom-margin);
+}
+.uds-person-profile .person-profession h4 {
+  margin: 0;
   font-size: 1rem;
+}
+.uds-person-profile .person .more-link {
+  line-height: 1;
 }
 .uds-person-profile .person ul {
   list-style-type: none;
