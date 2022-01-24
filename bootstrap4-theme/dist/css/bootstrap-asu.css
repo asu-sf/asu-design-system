@@ -24045,17 +24045,17 @@ Desktop styles
   display: flex;
   max-width: var(--max-width);
 }
-.uds-person-profile.small-profile {
+.uds-person-profile.small {
   --pic-size: 120px;
 }
-.uds-person-profile.micro-profile {
+.uds-person-profile.micro {
   --max-width: 384px;
   --pic-size: 78px;
   --person-profession-bottom-margin: 8px;
   --person-name-size: 20px;
   --name-top-margin: 0;
 }
-.uds-person-profile.micro-profile .person-profession h4:not(:first-child) {
+.uds-person-profile.micro .person-profession h4:not(:first-child) {
   display: none;
 }
 .uds-person-profile.fill {
