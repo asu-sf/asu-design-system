@@ -20071,7 +20071,6 @@ span.page-link:hover {
   font-weight: bold;
   font-size: 24px;
   margin: 0.2em 0.2em 0 0.2em;
-  text-transform: capitalize;
 }
 .uds-tabbed-panels .nav-tabs .nav-link.active {
   background-color: transparent;
