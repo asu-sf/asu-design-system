@@ -19766,7 +19766,12 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   font-weight: 700;
   text-align: left;
   opacity: 1;
@@ -19779,7 +19784,13 @@ p + h2,
 p + h3,
 p + h4,
 p + h5,
-p + h6 {
+p + h6,
+p + .h1,
+p + .h2,
+p + .h3,
+p + .h4,
+p + .h5,
+p + .h6 {
   margin-top: 2rem;
 }
 
@@ -19788,83 +19799,99 @@ p:last-of-type + h2,
 p:last-of-type + h3,
 p:last-of-type + h4,
 p:last-of-type + h5,
-p:last-of-type + h6 {
+p:last-of-type + h6,
+p:last-of-type + .h1,
+p:last-of-type + .h2,
+p:last-of-type + .h3,
+p:last-of-type + .h4,
+p:last-of-type + .h5,
+p:last-of-type + .h6 {
   margin-top: 1rem;
 }
 
-h1 {
+h1, .h1 {
   font-size: 4rem;
   line-height: 4.25rem;
   letter-spacing: -0.14rem;
 }
-h1.article {
+h1.article, .h1.article {
   font-size: 3rem;
   line-height: 3.25rem;
   letter-spacing: -0.105rem;
 }
 @media (max-width: 577px) {
-  h1, h1.article {
+  h1, h1.article, .h1, .h1.article {
     font-size: 2.25rem;
     line-height: 2.5rem;
     letter-spacing: -0.078rem;
   }
 }
 
-h2 {
+h2, .h2 {
   font-size: 2.5rem;
   line-height: 2.75rem;
   letter-spacing: -0.0875rem;
 }
 @media (max-width: 577px) {
-  h2 {
+  h2, .h2 {
     font-size: 2rem;
     line-height: 2.125rem;
     letter-spacing: -0.07rem;
   }
 }
 
-h3 {
+h3, .h3 {
   font-size: 1.5rem;
   line-height: 1.75rem;
   letter-spacing: -0.0525rem;
 }
 
-h4 {
+h4, .h4 {
   font-size: 1.25rem;
   line-height: 1.625rem;
   letter-spacing: -0.01875rem;
 }
 
-h5 {
+h5, .h5 {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.015rem;
 }
 
 h1 span[class^=highlight-],
+.h1 span[class^=highlight-],
 h2 span[class^=highlight-],
+.h2 span[class^=highlight-],
 h3 span[class^=highlight-],
-h4 span[class^=highlight-] {
+.h3 span[class^=highlight-],
+h4 span[class^=highlight-],
+.h4 span[class^=highlight-] {
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
 h1 span.highlight-gold,
-h2 span.highlight-gold {
+.h1 span.highlight-gold,
+h2 span.highlight-gold,
+.h2 span.highlight-gold {
   -webkit-box-shadow: -0.15em 0 0 #ffc627, 0.15em 0 0 #ffc627;
           box-shadow: -0.15em 0 0 #ffc627, 0.15em 0 0 #ffc627;
   background: #ffc627;
   color: #191919;
 }
 h1 span.highlight-black,
-h2 span.highlight-black {
+.h1 span.highlight-black,
+h2 span.highlight-black,
+.h2 span.highlight-black {
   -webkit-box-shadow: -0.15em 0 0 #191919, 0.15em 0 0 #191919;
           box-shadow: -0.15em 0 0 #191919, 0.15em 0 0 #191919;
   background: #191919;
   color: #fafafa;
 }
 h1 span.highlight-white,
-h2 span.highlight-white {
+.h1 span.highlight-white,
+h2 span.highlight-white,
+.h2 span.highlight-white {
   -webkit-box-shadow: -0.15em 0 0 #ffffff, 0.15em 0 0 #ffffff;
           box-shadow: -0.15em 0 0 #ffffff, 0.15em 0 0 #ffffff;
   background: #ffffff;
@@ -19872,21 +19899,27 @@ h2 span.highlight-white {
 }
 
 h3 span.highlight-gold,
-h4 span.highlight-gold {
+.h3 span.highlight-gold,
+h4 span.highlight-gold,
+.h4 span.highlight-gold {
   -webkit-box-shadow: -0.15em 0 0 #ffc627, 0.15em 0 0 #ffc627;
           box-shadow: -0.15em 0 0 #ffc627, 0.15em 0 0 #ffc627;
   background: #ffc627;
   color: #191919;
 }
 h3 span.highlight-black,
-h4 span.highlight-black {
+.h3 span.highlight-black,
+h4 span.highlight-black,
+.h4 span.highlight-black {
   -webkit-box-shadow: -0.15em 0 0 #191919, 0.15em 0 0 #191919;
           box-shadow: -0.15em 0 0 #191919, 0.15em 0 0 #191919;
   background: #191919;
   color: #fafafa;
 }
 h3 span.highlight-white,
-h4 span.highlight-white {
+.h3 span.highlight-white,
+h4 span.highlight-white,
+.h4 span.highlight-white {
   -webkit-box-shadow: -0.15em 0 0 #ffffff, 0.15em 0 0 #ffffff;
           box-shadow: -0.15em 0 0 #ffffff, 0.15em 0 0 #ffffff;
   background: #ffffff;
