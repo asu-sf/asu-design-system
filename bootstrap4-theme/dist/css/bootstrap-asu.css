@@ -20650,10 +20650,10 @@ Sidebar Navigation
           transform: rotate(180deg);
 }
 .sidebar > .nav-link-container {
-  padding: 0 0.5rem;
+  padding: 0.7rem 0.5rem;
+  min-height: 3rem;
   overflow: hidden;
   color: #191919;
-  height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20676,6 +20676,11 @@ Sidebar Navigation
 .sidebar .card-foldable .card-body {
   background-color: transparent;
 }
+.sidebar .card-foldable .card-header {
+  padding: 0.7rem 0.5rem;
+  min-height: 3rem;
+  min-height: calc(3rem - 1px);
+}
 .sidebar .card-foldable .card-header h1,
 .sidebar .card-foldable .card-header h2,
 .sidebar .card-foldable .card-header h3,
@@ -20684,7 +20689,15 @@ Sidebar Navigation
   font-weight: 400;
 }
 .sidebar .card-foldable .card-header a {
-  padding: 1rem 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .sidebar .card-foldable .card-header ~ .card-body {
   border-top: 0;
@@ -20693,7 +20706,7 @@ Sidebar Navigation
   padding: 0 1rem 1rem 1rem;
 }
 .sidebar .card-foldable .card-body > .nav-link {
-  padding: 0 2.5rem 0 1.5rem;
+  padding: 1rem 2.5rem 0 1.5rem;
 }
 .sidebar .card-foldable .card-body > .nav-link.is-active:after {
   bottom: -1rem;
