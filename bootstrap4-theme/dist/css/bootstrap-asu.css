@@ -23061,7 +23061,8 @@ span.uds-tooltip-visually-hidden {
 }
 
 .uds-card-and-image {
-  background-position: top;
+  aspect-ratio: 16/9;
+  background-position: center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23123,6 +23124,9 @@ span.uds-tooltip-visually-hidden {
   .uds-card-and-image-container {
     width: 100%;
   }
+}
+.uds-card-and-image .card-body p {
+  margin: 2rem 0 1.5rem 0;
 }
 
 /*--------------------------------------------------------------
@@ -24222,6 +24226,9 @@ Mobile Styles
   top: 150px;
   background-color: white;
   padding: 3rem;
+}
+.parallax-container .parallax-container-content.uds-card-and-image {
+  background-color: transparent;
 }
 .parallax-container .parallax-container-content h2 {
   margin: 0;
