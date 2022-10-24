@@ -1,8 +1,8 @@
 {
   "_from": "@asu-design-system/components-library@dev",
-  "_id": "@asu-design-system/components-library@2.3.0",
+  "_id": "@asu-design-system/components-library@2.4.0",
   "_inBundle": false,
-  "_integrity": "sha512-NS3M86XgnONxkrBNLfQFsVkYcCwzIWtFSLlWKwKfX9QZo/+69/J7GfugljCIzQPFXkARCSBv77RUqymhLluQtA==",
+  "_integrity": "sha512-G5SvP2SaTrC+fvyIZCRWw7sGN8XulZz3LyxuzyipFuSpm9g7SAxnWTBkw/1MhwWHqZH6HDTzGsopoSDh/W1hag==",
   "_location": "/@asu-design-system/components-library",
   "_phantomChildren": {},
   "_requested": {
@@ -20,8 +20,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fcomponents-library/-/components-library-2.3.0.tgz",
-  "_shasum": "d8ee526f1dc8639324054e52b0012c5fd9ff65a7",
+  "_resolved": "https://registry.web.asu.edu/@asu-design-system%2fcomponents-library/-/components-library-2.4.0.tgz",
+  "_shasum": "074f43d29fec95e629ae43ff4514b2a3d46897b2",
   "_spec": "@asu-design-system/components-library@dev",
   "_where": "/home/runner/work/asu-design-system/asu-design-system/packages",
   "author": {
@@ -44,7 +44,7 @@
     "prop-types": "^15.7.2"
   },
   "deprecated": false,
-  "description": "ASU Web Standards-compliant Preact components library",
+  "description": "[Deprecated] ASU Web Standards-compliant Preact components library",
   "devDependencies": {
     "@storybook/addon-a11y": "^6.1.15",
     "@storybook/addon-actions": "^6.1.15",
@@ -76,5 +76,5 @@
     "storybook": "start-storybook -p 8089 -s ./dist",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "2.3.0"
+  "version": "2.4.0"
 }

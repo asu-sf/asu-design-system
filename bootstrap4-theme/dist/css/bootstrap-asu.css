@@ -20547,6 +20547,11 @@ div[class^=uds-hero] .btn-row {
   color: #fafafa;
 }
 
+@media screen and (max-width: 576px) {
+  .breadcrumb {
+    display: none;
+  }
+}
 /*------------------------------------------------------------------
 Sidebar Navigation
 
@@ -20638,7 +20643,7 @@ Sidebar Navigation
   width: 100%;
   background-color: #ffc627;
   text-decoration: none;
-  bottom: -0.7rem;
+  bottom: -0.76rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -23287,6 +23292,8 @@ canvas {
 }
 .uds-anchor-menu h4 svg {
   margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.35rem;
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
@@ -23309,6 +23316,7 @@ canvas {
 .uds-anchor-menu .nav-link {
   color: #191919;
   padding: 1.5rem 0;
+  padding-left: 0.5rem;
   text-align: start;
   font-weight: 400;
 }
@@ -23325,6 +23333,7 @@ canvas {
 .uds-anchor-menu .nav-link svg {
   width: 2rem !important;
   margin-right: 0.5rem;
+  margin-left: -0.5rem;
 }
 
 @media (min-width: 576px) {
