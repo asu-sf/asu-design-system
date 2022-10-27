@@ -24029,12 +24029,6 @@ canvas {
 }
 .uds-table > table tbody tr th p,
 .uds-table > table tbody tr td p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 0;
 }
 .uds-table > table tbody tr:nth-child(2n) th,
