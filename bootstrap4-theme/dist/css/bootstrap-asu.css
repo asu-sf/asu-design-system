@@ -24009,6 +24009,7 @@ canvas {
   font-size: 1rem;
   text-align: left;
   padding: 1rem;
+  max-width: 700px;
 }
 .uds-table > table tr :nth-child(n+1) {
   -webkit-box-sizing: border-box;
