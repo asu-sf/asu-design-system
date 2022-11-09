@@ -19272,10 +19272,15 @@ Cards - Table of Contents
 .card-foldable .card-header:hover {
   background-color: #e8e8e8;
 }
+.card-foldable .card-header h3 {
+  font-size: 1.25rem;
+}
+.card-foldable .card-header h3,
 .card-foldable .card-header h4,
 .card-foldable .card-header h5 {
   margin: 0;
 }
+.card-foldable .card-header h3 a,
 .card-foldable .card-header h4 a,
 .card-foldable .card-header h5 a {
   padding: 0.5rem 1.5rem;
@@ -19293,6 +19298,7 @@ Cards - Table of Contents
       -ms-flex-align: center;
           align-items: center;
 }
+.card-foldable .card-header h3 a svg.fa-chevron-up,
 .card-foldable .card-header h4 a svg.fa-chevron-up,
 .card-foldable .card-header h5 a svg.fa-chevron-up {
   margin-left: 1.5rem;
@@ -19302,7 +19308,9 @@ Cards - Table of Contents
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-.card-foldable .card-header h4 a.collapsed svg.fa-chevron-up, .card-foldable .card-header h4 a.collapsed i.fa-chevron-up,
+.card-foldable .card-header h3 a.collapsed svg.fa-chevron-up, .card-foldable .card-header h3 a.collapsed i.fa-chevron-up,
+.card-foldable .card-header h4 a.collapsed svg.fa-chevron-up,
+.card-foldable .card-header h4 a.collapsed i.fa-chevron-up,
 .card-foldable .card-header h5 a.collapsed svg.fa-chevron-up,
 .card-foldable .card-header h5 a.collapsed i.fa-chevron-up {
   -webkit-transform: rotate(180deg);
@@ -20321,7 +20329,7 @@ div[class^=uds-hero].has-btn-row .content {
 div[class^=uds-hero].hide-content .content {
   display: none;
 }
-div[class^=uds-hero].uds-hero-video video, div[class^=uds-hero].uds-hero-video .hero-video-controls {
+div[class^=uds-hero].uds-video-hero video, div[class^=uds-hero].uds-video-hero .video-hero-controls {
   display: none;
 }
 
@@ -20471,10 +20479,10 @@ div[class^=uds-hero] .content,
 div[class^=uds-hero] .btn-row {
     max-width: calc(940px - 34%);
   }
-  div[class^=uds-hero].uds-hero-video .hero {
+  div[class^=uds-hero].uds-video-hero .hero {
     display: none;
   }
-  div[class^=uds-hero].uds-hero-video.uds-hero-video video {
+  div[class^=uds-hero].uds-video-hero.uds-video-hero video {
     display: block;
     grid-row: 1/span 6;
     grid-column: 1/span 3;
@@ -20491,7 +20499,7 @@ div[class^=uds-hero] .btn-row {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  div[class^=uds-hero].uds-hero-video .hero-video-controls {
+  div[class^=uds-hero].uds-video-hero .video-hero-controls {
     display: block;
     position: relative;
     z-index: 40;
@@ -20501,23 +20509,23 @@ div[class^=uds-hero] .btn-row {
     justify-self: flex-end;
     top: -3rem;
   }
-  div[class^=uds-hero].uds-hero-video .hero-video-controls .btn-circle-large {
+  div[class^=uds-hero].uds-video-hero .video-hero-controls .btn-circle-large {
     width: 56px !important;
     height: 56px !important;
     font-size: 16px !important;
     opacity: 0.3 !important;
   }
-  div[class^=uds-hero].uds-hero-video .hero-video-controls .btn-circle-large:hover {
+  div[class^=uds-hero].uds-video-hero .video-hero-controls .btn-circle-large:hover {
     opacity: 1 !important;
     cursor: pointer;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  div[class^=uds-hero].uds-hero-video .hero-video-controls .btn-circle-large .svg-inline--fa.fa-w-14 {
+  div[class^=uds-hero].uds-video-hero .video-hero-controls .btn-circle-large .svg-inline--fa.fa-w-14 {
     margin-left: 0 !important;
   }
-  div[class^=uds-hero].uds-hero-video .hero-video-controls #playHeroVid {
+  div[class^=uds-hero].uds-video-hero .video-hero-controls #playHeroVid {
     display: none;
   }
 }
