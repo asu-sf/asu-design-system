@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - name: Install packages
+      - name: Prep node config
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_GITHUB_TOKEN }}
         run: |
@@ -23,6 +23,12 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
           mkdir -p $GITHUB_WORKSPACE/packages
           cd $GITHUB_WORKSPACE/packages
+          npm install @asu/component-header
+      - name: Print npmrc
+        run: |
+          cat ~/.npmrc
+      - name: Install packages
+        run: |
           npm install @asu/component-header
       - name: Update files
         run: |
