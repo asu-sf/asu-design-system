@@ -1,0 +1,124 @@
+{
+  "_from": "@asu/component-header",
+  "_id": "@asu/component-header@2.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-bbmp95UkSbu852C/R5klOQo517QqQHUj73YIJZDepag3fDSbMEoc0JVykkPFeFYbV8j/1+gtc0Jb96kG1KluAQ==",
+  "_location": "/@asu/component-header",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@asu/component-header",
+    "name": "@asu/component-header",
+    "escapedName": "@asu%2fcomponent-header",
+    "scope": "@asu",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://npm.pkg.github.com/download/@asu/component-header/2.0.7/be739b995232028a07acfc4a387abbb767c932ef",
+  "_shasum": "be739b995232028a07acfc4a387abbb767c932ef",
+  "_spec": "@asu/component-header",
+  "_where": "/home/runner/work/asu-design-system/asu-design-system/packages",
+  "author": {
+    "name": "Nicolas Baudon"
+  },
+  "browser": "./dist/asuHeader.umd.js",
+  "bugs": {
+    "url": "https://github.com/asu/asu-unity-stack/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "ASU Global Header",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-syntax-jsx": "^7.14.5",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@storybook/addon-a11y": "^6.5.16",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-controls": "^6.5.16",
+    "@storybook/addon-docs": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.4",
+    "dotenv-webpack": "^7.0.3",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "http-proxy-middleware": "^2.0.0",
+    "jest": "^26.6.3",
+    "jest-image-snapshot": "^4.4.1",
+    "jest-transform-css": "^2.1.0",
+    "jest-transform-file": "^1.1.1",
+    "jsdom-screenshot": "^4.0.0",
+    "postcss-loader": "^6.1.1",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^11.1.0",
+    "semantic-release": "^17.4.2",
+    "semantic-release-monorepo": "^7.0.4",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack-filter-warnings-plugin": "^1.2.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "files": [
+    "examples/*",
+    "dist/*",
+    "docs/*",
+    "CHANGELOG.md"
+  ],
+  "homepage": "https://github.com/asu/asu-unity-stack#readme",
+  "license": "MIT",
+  "main": "./dist/asuHeader.cjs.js",
+  "module": "./dist/asuHeader.es.js",
+  "name": "@asu/component-header",
+  "peerDependencies": {
+    "@asu/components-core": "^2.1.0",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "react": ">= 16.14.0 < 18",
+    "react-dom": ">= 16.14.0 < 18",
+    "styled-components": "^5.3.0"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asu/asu-unity-stack.git",
+    "directory": "packages/component-header"
+  },
+  "scripts": {
+    "build": "webpack -c webpack/webpack.prod.js",
+    "build-storybook": "build-storybook -s ./dist",
+    "build:stats": "webpack -c webpack/webpack.prod.js --profile --json=compilation-stats.json",
+    "lint": "eslint --fix 'src/**/*.{js,jsx}' --ignore-path ../../.eslintignore",
+    "postbuild": "cp ./types/main.d.ts ./dist/main.d.ts",
+    "prebuild": "rm -rf ./dist",
+    "start:dev": "webpack-dashboard -- webpack serve -c webpack/webpack.dev.js",
+    "storybook": "start-storybook -s ./dist -p 9080",
+    "test": "jest --config=./jest.config.js --silent --coverage",
+    "test-update-snapshot": "yarn test -- -u"
+  },
+  "types": "./dist/main.d.ts",
+  "version": "2.0.7",
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
