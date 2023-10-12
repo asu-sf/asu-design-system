@@ -17,26 +17,20 @@ jobs:
           node-version: 14.x
       - name: Install packages
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "@asu-design-system:registry=https://registry.web.asu.edu/" >> ~/.npmrc
-          echo "//registry.web.asu.edu/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
+          echo "@asu:registry=https://npm.pkg.github.com/" >> ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
           mkdir -p $GITHUB_WORKSPACE/packages
           cd $GITHUB_WORKSPACE/packages
-          npm install @asu-design-system/components-library@dev
-          npm install @asu-design-system/bootstrap4-theme@dev  
-          npm install @asu-design-system/design-tokens@dev
+          npm install @asu/component-header
       - name: Update files
         run: |
           cd $GITHUB_WORKSPACE/repo
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          rm -rf components-library
-          rm -rf bootstrap4-theme
-          rm -rf design-tokens
-          mv $GITHUB_WORKSPACE/packages/node_modules/\@asu-design-system/components-library .
-          mv $GITHUB_WORKSPACE/packages/node_modules/\@asu-design-system/bootstrap4-theme .
-          mv $GITHUB_WORKSPACE/packages/node_modules/\@asu-design-system/design-tokens .
+          rm -rf component-header
+          mv $GITHUB_WORKSPACE/packages/node_modules/\@asu/component-header .
           git add .
           git update-index --refresh 
           git diff-index --quiet HEAD -- || ( git commit -m "Updating ASU Design System from source - $(date)" && git push )
